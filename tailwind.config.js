@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./components/**/*.{vue,js}",
+    "./pages/**/*.vue",
+    "./layouts/**/*.vue",
+  ],
   theme: {
-    extend: {},
+    colors: {
+      red: "#8C1515",
+      white: "#FFF",
+      black: "#000",
+    },
+    fontFamily: {
+      sans: ["SourceSans3", "sans-serif"],
+      serif: ["SourceSerif4", "serif"],
+    },
   },
   plugins: [],
-}
-
+};
