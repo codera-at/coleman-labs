@@ -9,4 +9,13 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-particles",
   ],
+  fonts: {
+    defaults: {
+      weights: [300, 400, 500, 600, 700],
+    },
+    families: [
+      { name: "SourceSans3", provider: "local" },
+      { name: "SourceSerif4", provider: "local" },
+    ],
+  },
 });
