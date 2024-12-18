@@ -45,10 +45,10 @@
 <script setup>
 const navLinks = [
   { name: "News", link: "/news" },
-  { name: "Research", link: "/research" },
+  { name: "Research", link: "/#research" },
   { name: "Publications", link: "/publications" },
-  { name: "Team", link: "/team" },
-  { name: "Contact", link: "/contact" },
+  { name: "Team", link: "/#team" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 const isScrolled = ref(false);

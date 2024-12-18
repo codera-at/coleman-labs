@@ -61,12 +61,12 @@
           <div class="flex gap-8">
             <NuxtLink
               class="rounded-full border border-red bg-white px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
-              to="/team/current-members"
+              to="/#team"
               >Current Members</NuxtLink
             >
             <NuxtLink
               class="rounded-full border border-red bg-white px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
-              to="/team/alumni"
+              to="/#team"
               >Alumni</NuxtLink
             >
           </div>
