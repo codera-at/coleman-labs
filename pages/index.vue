@@ -1,12 +1,19 @@
 <template>
   <div>
     <Hero />
-    <Container id="research" class="py-32">
-      <div class="mt-32 grid grid-cols-1 sm:grid-cols-3">
-        <div class="col-span-1 flex flex-wrap gap-16">
-          <Headline tag="h2" color="secondary" theme="pill" custom-class="sm:ml-16"
-            >Research</Headline
-          >
+    <Container class="py-16 sm:py-32">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 md:gap-32">
+        <div class="col-span-1 flex flex-col gap-8 sm:gap-16">
+          <div>
+            <Headline
+              id="research"
+              tag="h2"
+              color="secondary"
+              theme="pill"
+              custom-class="sm:ml-16 scroll-mt-32"
+              >Research</Headline
+            >
+          </div>
           <p class="max-w-sm">
             The Neural Interaction Lab focuses on the interactions between
             multiple neural systems using an intersection of disciplines.
@@ -16,28 +23,60 @@
               >Neural Interactions</Headline
             >
             <ul
-              class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-4"
+              class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-2 sm:gap-4"
             >
               <li
-                class="grow cursor-pointer rounded-full bg-red px-4 py-2 text-center text-lg text-white transition-all hover:grow-[10]"
+                @click="selectedResearchAreaId = researchArea.id"
+                :class="{
+                  'bg-red text-white':
+                    selectedResearchAreaId === researchArea.id,
+                  'text-red': selectedResearchAreaId !== researchArea.id,
+                }"
+                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base"
                 v-for="researchArea in researchAreas"
               >
-                {{ researchArea }}
+                {{ researchArea.title }}
               </li>
             </ul>
+            <Transition name="fade" mode="out-in">
+              <p
+                :key="selectedResearchArea.id"
+                class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4"
+              >
+                {{ selectedResearchArea.teaser }}
+              </p>
+            </Transition>
+            <Transition name="fade" mode="out-in">
+              <NuxtLink
+                v-if="selectedResearchArea.link"
+                :key="selectedResearchArea.id"
+                class="mt-8 inline-block rounded-full border border-red bg-white p-2 px-4 transition-colors hover:bg-red hover:text-white"
+                :to="selectedResearchArea.link"
+                >Learn more</NuxtLink
+              >
+            </Transition>
           </div>
         </div>
-        <div></div>
+        <div>
+          <Transition name="fade" mode="out-in">
+            <NuxtImg
+              class="max-h-[80vh]"
+              :src="selectedResearchArea.img"
+              :key="selectedResearchArea.id"
+            ></NuxtImg>
+          </Transition>
+        </div>
       </div>
     </Container>
-    <Container id="team" class="py-32">
-      <div class="mt-32 grid grid-cols-1 sm:grid-cols-2">
+    <Container class="py-16 sm:py-32">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="space-y-16">
           <Headline
+            id="team"
             tag="h2"
             color="secondary"
             theme="pill"
-            custom-class="sm:ml-16"
+            custom-class="sm:ml-16 scroll-mt-32"
             >Team</Headline
           >
           <p class="max-w-sm">
@@ -73,7 +112,7 @@
         </div>
       </div>
     </Container>
-    <Container id="contact" class="py-32">
+    <Container id="contact" class="py-16 sm:py-32">
       <div class="flex">
         <Headline
           tag="h2"
@@ -122,8 +161,8 @@
       <Headline tag="h4" size="sm" transform="none" weight="semibold"
         ><span class="font-serif">Stanford</span> Engineering</Headline
       >
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <p>Wu Tsai Neurosciences Building</p>
             <p class="font-light">
@@ -149,16 +188,31 @@
 </template>
 
 <script setup>
-const researchAreas = [
-  "Cardio",
-  "Sleep",
-  "Gut",
-  "Smell",
-  "Computer",
-  "Female Care",
-  "Dynamics",
-  "Applied Probability",
-];
+import researchAreas from "/api/research.json";
+
+const selectedResearchAreaId = ref(0);
+const selectedResearchArea = computed(() => {
+  return (
+    researchAreas.find(
+      (researchArea) => researchArea.id === selectedResearchAreaId.value,
+    ) || {}
+  );
+});
+onMounted(() => {
+  if (researchAreas.length > 0) {
+    selectedResearchAreaId.value = researchAreas[0].id;
+  }
+});
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

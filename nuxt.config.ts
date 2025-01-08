@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-particles",
   ],
+  build: {
+    transpile: ['gsap'],
+  },
   fonts: {
     defaults: {
       weights: [300, 400, 500, 600, 700],

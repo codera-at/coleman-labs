@@ -1,0 +1,232 @@
+[
+  {
+    "id": "0",
+    "title": "Overview",
+    "img": "/img/research/Figur_Overview.svg",
+    "teaser": "The Neural Interaction Lab focuses on the interactions between multiple neural systems using an intersection of disciplines."
+  },
+  {
+    "id": "1",
+    "title": "Cardio",
+    "slug": "cardio",
+    "link": "/research/cardio",
+    "img": "/img/research/Figur_Cardio.svg",
+    "teaser": "The Neural Interaction Lab focuses on the interactions between multiple neural systems using an intersection of disciplines.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave.",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Sleep",
+    "slug": "sleep",
+    "link": "/research/sleep",
+    "img": "/img/research/Figur_Sleep.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave.",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Gut",
+    "slug": "gut",
+    "link": "/research/gut",
+    "img": "/img/research/Figur_Gut.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Brain Machine Interface",
+    "slug": "bmi",
+    "link": "/research/bmi",
+    "img": "/img/research/Figur_BMI.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Reproduction",
+    "slug": "reproduction",
+    "link": "/research/reproduction",
+    "img": "/img/research/Figur_Reproduction.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Brain Dynamics",
+    "slug": "brain-dynamics",
+    "link": "/research/brain-dynamics",
+    "img": "/img/research/Figur_Brain_Dynamics.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Applied Probability",
+    "slug": "applied-probability",
+    "link": "/research/applied-probability",
+    "img": "/img/research/Figur_Applied_Probability.svg",
+    "teaser": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.",
+    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
+    "publications": [
+      {
+        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
+        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "month": "March",
+        "year": "2020"
+      },
+      {
+        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
+        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
+        "journal": "Clinical Gastroenterology and Hepatology",
+        "month": "December",
+        "year": 2019
+      },
+      {
+        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
+        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
+        "journal": "PLOS ONE",
+        "month": "October",
+        "year": 2019
+      }
+    ]
+  }
+]

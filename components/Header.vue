@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed left-1/2 top-0 w-full max-w-screen-2xl -translate-x-1/2 border-b border-red"
+    class="fixed left-1/2 top-0 w-full max-w-[95vw] -translate-x-1/2 border-b border-red"
   >
     <div
       :class="{ 'bg-white': isScrolled }"
@@ -44,7 +44,7 @@
 
 <script setup>
 const navLinks = [
-  { name: "News", link: "/news" },
+  { name: "Home", link: "/" },
   { name: "Research", link: "/#research" },
   { name: "Publications", link: "/publications" },
   { name: "Team", link: "/#team" },
