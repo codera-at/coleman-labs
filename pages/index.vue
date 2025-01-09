@@ -69,8 +69,8 @@
       </div>
     </Container>
     <Container class="py-16 sm:py-32">
-      <div class="grid grid-cols-1 sm:grid-cols-2">
-        <div class="space-y-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="space-y-8 sm:space-y-16">
           <Headline
             id="team"
             tag="h2"
@@ -90,22 +90,22 @@
             height="333"
           />
         </div>
-        <div class="space-y-16">
+        <div class="space-y-8 sm:space-y-16">
           <NuxtImg
             class="rounded-3xl border border-red"
             src="/img/coleman-labs-team-02.webp"
             width="700"
             height="483"
           />
-          <div class="flex gap-8">
+          <div class="flex gap-4 sm:gap-8">
             <NuxtLink
               class="rounded-full border border-red bg-white px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
-              to="/#team"
+              to="/team/current-members"
               >Current Members</NuxtLink
             >
             <NuxtLink
               class="rounded-full border border-red bg-white px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
-              to="/#team"
+              to="/team/alumni"
               >Alumni</NuxtLink
             >
           </div>

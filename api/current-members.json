@@ -1,12 +1,22 @@
 [
   {
     "name": "Dr. Todd Coleman",
-    "position": "Associate Professor of Bioengineering and Electrical Science"
+    "position": "Associate Professor of Bioengineering and Electrical Science",
+    "img": "/img/team/member-todd-coleman.webp"
   },
   {
     "name": "Sapphire Doan",
-    "position": "Life Science Research Professional, Lab Safety Coordinator"
+    "position": "Life Science Research Professional, Lab Safety Coordinator",
+    "img": "/img/team/member-sapphire-doan.webp"
   },
-  { "name": "Takoua El Bejaoui", "position": "Research Associate" },
-  { "name": "Andrew Perley", "position": "Graduate Student" }
+  {
+    "name": "Takoua El Bejaoui",
+    "position": "Research Associate",
+    "img": "/img/team/member-default.webp"
+  },
+  {
+    "name": "Andrew Perley",
+    "position": "Graduate Student",
+    "img": "/img/team/member-andrew-perley.webp"
+  }
 ]

@@ -15,7 +15,7 @@
         >
         <Headline size="xl" weight="bold">The Neural Interaction Lab</Headline>
       </div>
-      <p class="sm:ml-32 mt-16 max-w-96 text-xl sm:text-2xl">
+      <p class="mt-16 max-w-96 text-xl sm:ml-32 sm:text-2xl">
         The Neural Interaction Lab is home to a multidisciplinary team of
         researchers studying a variety of disciplines.
       </p>
@@ -33,4 +33,8 @@ const onLoad = (container: Container) => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+#tsparticles {
+  pointer-events: auto;
+}
+</style>

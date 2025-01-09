@@ -1,5 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <Container class="min-h-screen py-32">
+      <Headline tag="h1" color="secondary" theme="pill" class="mt-4 sm:mt-8"
+        >???</Headline
+      >
+    </Container>
+  </div>
 </template>
 
 <script setup></script>

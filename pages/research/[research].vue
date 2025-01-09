@@ -1,6 +1,6 @@
 <template>
   <Container class="py-32">
-    <div class="mt-16 grid grid-cols-1 sm:grid-cols-3">
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-16">
       <div class="col-span-2">
         <Headline tag="h1" color="secondary" theme="pill">
           {{ research.title }}
@@ -27,7 +27,12 @@
           </ul>
         </div>
       </div>
-      <div></div>
+      <div class="relative">
+        <img
+              class="max-h-[80vh] sticky top-16 -z-10"
+              :src="research.img"
+            ></img>
+      </div>
     </div>
   </Container>
 </template>
