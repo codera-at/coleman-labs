@@ -59,11 +59,11 @@
         </div>
         <div>
           <Transition name="fade" mode="out-in">
-            <NuxtImg
+            <img
               class="max-h-[80vh]"
               :src="selectedResearchArea.img"
               :key="selectedResearchArea.id"
-            ></NuxtImg>
+            ></img>
           </Transition>
         </div>
       </div>
