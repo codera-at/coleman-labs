@@ -23,13 +23,14 @@
         </NuxtLink>
       </div>
       <div
-        class="fixed right-0 top-0 h-screen w-[50vw] border-l border-red bg-white transition-transform"
+        class="fixed right-0 top-0 h-screen w-[60vw] border-l border-red bg-white transition-transform"
         :class="[isMenuOpen ? 'translate-x-0' : 'translate-x-full']"
       >
-        <nav class="flex flex-col justify-center h-full px-8 py-8">
+        <nav class="flex h-full flex-col justify-center px-8 py-8">
           <ul class="flex flex-col gap-8">
-            <li class="" v-for="navLink in navLinks">
+            <li class="text-2xl" v-for="navLink in navLinks">
               <NuxtLink
+                @click="isMenuOpen = false"
                 :class="{ underline: $route.name === navLink.name }"
                 :to="navLink.link"
                 >{{ navLink.name }}</NuxtLink
@@ -45,12 +46,11 @@
               <NuxtLink
                 :class="{ underline: $route.name === navLink.name }"
                 :to="navLink.link"
-                >{{ navLink.name }}</NuxtLink
+                >{{ navLink.name }} <Icon v-if="navLink.submenu" name="ph:caret-down"></Icon></NuxtLink
               >
             </li>
           </ul>
         </nav>
-
         <button
           class="menu-icon space-y-2 rounded-full bg-red px-4 py-4 text-white sm:hidden"
           @click="isMenuOpen = !isMenuOpen"
@@ -67,10 +67,22 @@
 <script setup>
 const navLinks = [
   { name: "Home", link: "/" },
-  { name: "Research", link: "/#research" },
+  {
+    name: "Research",
+    link: "/research",
+    submenu: [
+      { name: "Cardio", link: "/research/cardio" },
+      { name: "Sleep", link: "/research/sleep" },
+      { name: "Gut", link: "/research/gut" },
+      { name: "Brain Machine Interface", link: "/research/bmi" },
+      { name: "Reproduction", link: "/research/reproduction" },
+      { name: "Brain Dynamics", link: "/research/brain-dynamics" },
+      { name: "Applied Probability", link: "/research/applied-probability" },
+    ],
+  },
   { name: "Publications", link: "/publications" },
-  { name: "Team", link: "/#team" },
-  { name: "Contact", link: "/#contact" },
+  { name: "Team", link: "/team" },
+  { name: "Contact", link: "/contact" },
 ];
 
 const isScrolled = ref(false);

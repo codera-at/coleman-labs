@@ -1,32 +1,55 @@
 <template>
-  <div>
-    <Container class="min-h-screen py-32">
-      <Headline tag="h1" color="secondary" theme="pill" class="mt-4 sm:mt-8">
-        Team
-      </Headline>
-      <div class="mt-4 grid grid-cols-1 gap-8 sm:mt-8 sm:grid-cols-4">
-        <div class="flex flex-wrap content-start gap-4">
-          <NuxtLink
-            to="/team/current-members"
-            class="rounded-full border border-red px-2 py-2 text-center transition-colors hover:bg-red hover:text-white sm:px-4"
-            :class="{
-              'bg-red text-white': $route.params.team === 'current-members',
-            }"
+  <div class="pt-16">
+    <Container class="py-16 sm:py-32">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div class="space-y-8 sm:space-y-16">
+          <Headline
+            id="team"
+            tag="h2"
+            color="secondary"
+            theme="pill"
+            custom-class="sm:ml-16 scroll-mt-32"
+            >Team</Headline
           >
-            Current Members
-          </NuxtLink>
-          <NuxtLink
-            to="/team/alumni"
-            class="rounded-full border border-red px-4 py-2 text-center transition-colors hover:bg-red hover:text-white"
-            :class="{ 'bg-red text-white': $route.params.team === 'alumni' }"
-          >
-            Alumni
-          </NuxtLink>
+          <p class="max-w-sm">
+            The Neural Interaction Lab focuses on the interactions between
+            multiple neural systems using an intersection of disciplines.
+          </p>
+          <NuxtImg
+            class="rounded-3xl border border-red sm:ml-16"
+            src="/img/coleman-labs-team-01.webp"
+            width="500"
+            height="333"
+          />
         </div>
-        <div class="col-span-3">
-          <NuxtPage> </NuxtPage>
+        <div class="space-y-8 sm:space-y-16">
+          <NuxtImg
+            class="rounded-3xl border border-red"
+            src="/img/coleman-labs-team-02.webp"
+            width="700"
+            height="483"
+          />
+          <div class="flex gap-4 sm:gap-8">
+            <NuxtLink
+              class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
+              :class="{
+                'bg-red text-white': $route.params.team === 'current-members',
+              }"
+              to="/team/current-members"
+              >Current Members</NuxtLink
+            >
+            <NuxtLink
+              class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
+              :class="{ 'bg-red text-white': $route.params.team === 'alumni' }"
+              to="/team/alumni"
+              >Alumni</NuxtLink
+            >
+          </div>
         </div>
       </div>
+    </Container>
+    <Container class="min-h-screen">
+      <NuxtPage class="sm:ml-16"> </NuxtPage>
     </Container>
   </div>
 </template>

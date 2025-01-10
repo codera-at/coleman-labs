@@ -1,0 +1,93 @@
+<template>
+  <div class="pt-16">
+    <Container class="min-h-screen py-16 sm:py-32">
+      <Headline
+        id="research"
+        tag="h2"
+        color="secondary"
+        theme="pill"
+        custom-class="sm:ml-16 scroll-mt-32"
+        >Research</Headline
+      >
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-16 md:gap-32 mt-8">
+        <div class="col-span-1 flex flex-col gap-8 sm:gap-16">
+          <div>
+            <ul
+              class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-2 sm:gap-4"
+            >
+              <li
+                @click="selectedResearchAreaId = researchArea.id"
+                :class="{
+                  'bg-red text-white':
+                    selectedResearchAreaId === researchArea.id,
+                  'text-red': selectedResearchAreaId !== researchArea.id,
+                }"
+                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:sm:ml-16"
+                v-for="researchArea in researchAreas"
+                :key="researchArea.id"
+              >
+                {{ researchArea.title }}
+              </li>
+            </ul>
+            <Transition name="fade" mode="out-in">
+              <p
+                :key="selectedResearchArea.id"
+                class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4 sm:ml-16"
+              >
+                {{ selectedResearchArea.teaser }}
+              </p>
+            </Transition>
+            <Transition name="fade" mode="out-in">
+              <NuxtLink
+                v-if="selectedResearchArea.link"
+                :key="selectedResearchArea.id"
+                class="float-right mt-8 inline-block rounded-full border border-red bg-white p-2 px-4 transition-colors hover:bg-red hover:text-white"
+                :to="selectedResearchArea.link"
+                >Learn more</NuxtLink
+              >
+            </Transition>
+          </div>
+        </div>
+        <div class="order-first sm:order-last">
+          <Transition name="fade" mode="out-in">
+            <img
+              class="max-h-[80vh]"
+              :src="selectedResearchArea.img"
+              :key="selectedResearchArea.id"
+            />
+          </Transition>
+        </div>
+      </div>
+    </Container>
+  </div>
+</template>
+
+<script setup>
+import researchAreas from "/api/research.json";
+
+const selectedResearchAreaId = ref(0);
+const selectedResearchArea = computed(() => {
+  return (
+    researchAreas.find(
+      (researchArea) => researchArea.id === selectedResearchAreaId.value,
+    ) || {}
+  );
+});
+onMounted(() => {
+  if (researchAreas.length > 0) {
+    selectedResearchAreaId.value = researchAreas[0].id;
+  }
+});
+</script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
