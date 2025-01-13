@@ -9,7 +9,9 @@
         custom-class="sm:ml-16 scroll-mt-32"
         >Research</Headline
       >
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-16 md:gap-32 mt-8">
+      <div
+        class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-16 md:gap-32"
+      >
         <div class="col-span-1 flex flex-col gap-8 sm:gap-16">
           <div>
             <ul
@@ -37,7 +39,7 @@
                 {{ selectedResearchArea.teaser }}
               </p>
             </Transition>
-            <Transition name="fade" mode="out-in">
+            <!-- <Transition name="fade" mode="out-in">
               <NuxtLink
                 v-if="selectedResearchArea.link"
                 :key="selectedResearchArea.id"
@@ -45,13 +47,14 @@
                 :to="selectedResearchArea.link"
                 >Learn more</NuxtLink
               >
-            </Transition>
+            </Transition> -->
           </div>
+          <NuxtPage></NuxtPage>
         </div>
-        <div class="order-first sm:order-last">
+        <div class="order-first sm:order-last relative -z-10">
           <Transition name="fade" mode="out-in">
             <img
-              class="max-h-[80vh]"
+              class="max-h-[80vh] sticky top-32"
               :src="selectedResearchArea.img"
               :key="selectedResearchArea.id"
             />

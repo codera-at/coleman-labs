@@ -1,40 +1,30 @@
 <template>
-  <Container class="py-32">
-    <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-16">
-      <div class="col-span-2">
-        <Headline tag="h1" color="secondary" theme="pill">
-          {{ research.title }}
-        </Headline>
-        <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
-          <p>{{ research.description }}</p>
-        </div>
-        <Headline
-          tag="h2"
-          color="secondary"
-          theme="pill"
-          size="md"
-          custom-class="mt-8"
-        >
-          Publications
-        </Headline>
-        <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
-          <ul class="space-y-4">
-            <li v-for="publication in research.publications">
-              {{ publication.authors }}, "{{ publication.title }}"
-              <em>{{ publication.journal }}</em
-              >, {{ publication.month }} {{ publication.year }}.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="relative">
-        <img
-              class="max-h-[80vh] sticky top-16 -z-10"
-              :src="research.img"
-            ></img>
-      </div>
+  <div>
+    <Headline tag="h2" color="secondary" theme="pill" custom-class="sm:ml-16">
+      {{ research.title }}
+    </Headline>
+    <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
+      <p>{{ research.description }}</p>
     </div>
-  </Container>
+    <Headline
+      tag="h2"
+      color="secondary"
+      theme="pill"
+      size="md"
+      custom-class="mt-8 sm:ml-16"
+    >
+      Publications
+    </Headline>
+    <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
+      <ul class="space-y-4">
+        <li v-for="publication in research.publications">
+          {{ publication.authors }}, "{{ publication.title }}"
+          <em>{{ publication.journal }}</em
+          >, {{ publication.month }} {{ publication.year }}.
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script setup>

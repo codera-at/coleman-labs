@@ -42,12 +42,26 @@
       <div class="z-50 flex flex-wrap content-center justify-center">
         <nav class="hidden rounded-full bg-red px-8 py-2 sm:block">
           <ul class="flex gap-8 text-white">
-            <li class="" v-for="navLink in navLinks">
+            <li class="group relative" v-for="navLink in navLinks">
               <NuxtLink
                 :class="{ underline: $route.name === navLink.name }"
+                class="items-center flex gap-2"
                 :to="navLink.link"
-                >{{ navLink.name }} <Icon v-if="navLink.submenu" name="ph:caret-down"></Icon></NuxtLink
+                >{{ navLink.name }}
+                <Icon v-if="navLink.submenu" name="ph:caret-down"></Icon
+              ></NuxtLink>
+              <ul v-if="navLink.submenu"
+                class="absolute hidden w-52 flex-col gap-2 rounded-b-3xl bg-red p-4 text-white group-hover:flex -left-6"
               >
+                <li
+                  class="rounded-full px-2 py-1 hover:bg-white hover:text-red"
+                  v-for="subnavLink in navLink.submenu"
+                >
+                  <NuxtLink :to="subnavLink.link">
+                    {{ subnavLink.name }}
+                  </NuxtLink>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
