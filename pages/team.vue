@@ -12,8 +12,7 @@
             >Team</Headline
           >
           <p class="max-w-sm">
-            The Neural Interaction Lab focuses on the interactions between
-            multiple neural systems using an intersection of disciplines.
+            Our team is composed of dedicated researchers and professionals who are passionate about advancing the field of neural interactions. We collaborate across various disciplines to push the boundaries of knowledge and innovation.
           </p>
           <NuxtImg
             class="rounded-3xl border border-red sm:ml-16"

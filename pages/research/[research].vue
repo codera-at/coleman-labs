@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Headline tag="h2" color="secondary" theme="pill" custom-class="sm:ml-16">
+    <Headline tag="h2" color="secondary" theme="pill" custom-class="">
       {{ research.title }}
     </Headline>
     <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
@@ -11,7 +11,7 @@
       color="secondary"
       theme="pill"
       size="md"
-      custom-class="mt-8 sm:ml-16"
+      custom-class="mt-8"
     >
       Publications
     </Headline>
@@ -30,9 +30,7 @@
 <script setup>
 import researchAreas from "/api/research.json";
 const route = useRoute();
-onMounted(() => {
-  console.log(route.params);
-});
+
 
 const research = researchAreas.find(
   (research) => research.slug === route.params.research,

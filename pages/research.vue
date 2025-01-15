@@ -6,7 +6,7 @@
         tag="h2"
         color="secondary"
         theme="pill"
-        custom-class="sm:ml-16 scroll-mt-32"
+        custom-class="scroll-mt-32"
         >Research</Headline
       >
       <div
@@ -18,13 +18,18 @@
               class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-2 sm:gap-4"
             >
               <li
-                @click="selectedResearchAreaId = researchArea.id"
+                @click="
+                  () => {
+                    if (researchArea.link) {
+                      navigateTo(researchArea.link);
+                    }
+                  }
+                "
                 :class="{
-                  'bg-red text-white':
-                    selectedResearchAreaId === researchArea.id,
-                  'text-red': selectedResearchAreaId !== researchArea.id,
+                  'bg-red text-white': route.path === researchArea.link,
+                  'text-red': route.path !== researchArea.link,
                 }"
-                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:sm:ml-16"
+                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:sm:max-w-[80%]"
                 v-for="researchArea in researchAreas"
                 :key="researchArea.id"
               >
@@ -34,7 +39,7 @@
             <Transition name="fade" mode="out-in">
               <p
                 :key="selectedResearchArea.id"
-                class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4 sm:ml-16"
+                class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4"
               >
                 {{ selectedResearchArea.teaser }}
               </p>
@@ -49,12 +54,14 @@
               >
             </Transition> -->
           </div>
-          <NuxtPage></NuxtPage>
+          <Transition name="fade" mode="out-in">
+            <NuxtPage></NuxtPage>
+          </Transition>
         </div>
-        <div class="order-first sm:order-last relative -z-10">
+        <div class="relative -z-10 order-first sm:order-last">
           <Transition name="fade" mode="out-in">
             <img
-              class="max-h-[80vh] sticky top-32"
+              class="sticky top-32 max-h-[80vh]"
               :src="selectedResearchArea.img"
               :key="selectedResearchArea.id"
             />
@@ -67,13 +74,12 @@
 
 <script setup>
 import researchAreas from "/api/research.json";
-
+const route = useRoute();
 const selectedResearchAreaId = ref(0);
 const selectedResearchArea = computed(() => {
+  console.log(route);
   return (
-    researchAreas.find(
-      (researchArea) => researchArea.id === selectedResearchAreaId.value,
-    ) || {}
+    researchAreas.find((researchArea) => researchArea.link === route.path) || {}
   );
 });
 onMounted(() => {
