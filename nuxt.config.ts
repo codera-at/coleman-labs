@@ -8,9 +8,13 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "nuxt-particles",
+    "@storyblok/nuxt",
   ],
+  storyblok: {
+    accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
+  },
   build: {
-    transpile: ['gsap'],
+    transpile: ["gsap"],
   },
   fonts: {
     defaults: {

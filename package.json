@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,8 +14,10 @@
     "@nuxt/icon": "^1.10.1",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@storyblok/nuxt": "^6.2.2",
     "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",
+    "serpapi": "^2.1.0",
     "vue": "latest",
     "vue-router": "latest"
   },
