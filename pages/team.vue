@@ -12,10 +12,13 @@
             >Team</Headline
           >
           <p class="max-w-sm">
-            Our team is composed of dedicated researchers and professionals who are passionate about advancing the field of neural interactions. We collaborate across various disciplines to push the boundaries of knowledge and innovation.
+            Our team is composed of dedicated researchers and professionals who
+            are passionate about advancing the field of neural interactions. We
+            collaborate across various disciplines to push the boundaries of
+            knowledge and innovation.
           </p>
           <NuxtImg
-            class="rounded-3xl border border-red sm:ml-16"
+            class="rounded-3xl border border-red"
             src="/img/coleman-labs-team-01.webp"
             width="500"
             height="333"
@@ -28,14 +31,30 @@
             width="700"
             height="483"
           />
-          <div class="flex gap-4 sm:gap-8">
+          <div class="flex flex-wrap gap-4 sm:gap-8">
             <NuxtLink
               class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
               :class="{
-                'bg-red text-white': $route.params.team === 'current-members',
+                'bg-red text-white': $route.params.team === 'phd-students',
               }"
-              to="/team/current-members"
-              >Current Members</NuxtLink
+              to="/team/phd-students"
+              >PHD Students</NuxtLink
+            >
+            <NuxtLink
+              class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
+              :class="{
+                'bg-red text-white': $route.params.team === 'post-docs',
+              }"
+              to="/team/post-docs"
+              >Post Doc</NuxtLink
+            >
+            <NuxtLink
+              class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
+              :class="{
+                'bg-red text-white': $route.params.team === 'staff',
+              }"
+              to="/team/staff"
+              >Staff</NuxtLink
             >
             <NuxtLink
               class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
@@ -46,14 +65,20 @@
           </div>
         </div>
       </div>
-    </Container>
-    <Container class="min-h-screen">
-      <NuxtPage class="sm:ml-16"> </NuxtPage>
+      <NuxtPage class="mt-16"> </NuxtPage>
     </Container>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const route = useRoute();
+onMounted(() => {
+  console.log(route.params.team);
+  if (!route.params.team) {
+    navigateTo("/team/current-members");
+  }
+});
+</script>
 
 <style scoped>
 /* Add any additional styles here */

@@ -1,22 +1,195 @@
-[
-  {
-    "name": "Dr. Todd Coleman",
-    "position": "Associate Professor of Bioengineering and Electrical Science",
-    "img": "/img/team/member-todd-coleman.webp"
-  },
-  {
-    "name": "Sapphire Doan",
-    "position": "Life Science Research Professional, Lab Safety Coordinator",
-    "img": "/img/team/member-sapphire-doan.webp"
-  },
-  {
-    "name": "Takoua El Bejaoui",
-    "position": "Research Associate",
-    "img": "/img/team/member-default.webp"
-  },
-  {
-    "name": "Andrew Perley",
-    "position": "Graduate Student",
-    "img": "/img/team/member-andrew-perley.webp"
-  }
-]
+{
+  "vip": [
+    {
+      "name": "Dr. Todd Coleman",
+      "position": "Associate Professor of Bioengineering and Electrical Science",
+      "img": "/img/team/member-todd-coleman.webp"
+    }
+  ],
+  "phd-students": [
+    {
+      "name": "Tomasz Zaluska",
+      "phd-program": "Bioengineering",
+      "undergrad-major": "Electrical Engineering",
+      "undergrad-university": "ETH Zurich",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "Implantables",
+      "hobbies": "Relaxing",
+      "email": "zaluskat@stanford.edu",
+      "img": "/img/team/tomasz-zaluska.webp"
+    },
+    {
+      "name": "Alisa Hathaway",
+      "phd-program": "Electrical Engineering 3rd year",
+      "undergrad-major": "Computation & Cognition",
+      "undergrad-university": "MIT",
+      "masters-major": "Electrical Engineering",
+      "masters-university": "Stanford",
+      "research-focus": "gut-brain axis during external stimuli, flexible electronic fabrication",
+      "hobbies": "Hiking/camping/reading",
+      "email": "alisayh@stanford.edu",
+      "img": "/img/team/alisa-hathaway.webp"
+    },
+    {
+      "name": "Akshita Rao",
+      "phd-program": "Bioengineering, 3rd year",
+      "undergrad-major": "Mechanical Engineering, Biomedical Engineering",
+      "undergrad-university": "Tufts",
+      "masters-major": "Bioengineering",
+      "masters-university": "Tufts",
+      "research-focus": "statistical methods to characterize dynamics of brain-body physiology and behavior",
+      "hobbies": "Reading, crocheting, hanging out with my dog",
+      "email": "akshitar@stanford.edu",
+      "img": "/img/team/akshita-rao.webp"
+    },
+    {
+      "name": "Syamantak Payra",
+      "phd-program": "Electrical Engineering",
+      "undergrad-major": "Electrical Engineering and Computer Science",
+      "undergrad-university": "MIT",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "bioelectronics and medical devices, pediatric health, gut-brain diagnostics",
+      "hobbies": "playing violin, nature photography, leisurely motorcycle rides",
+      "email": "spayra1@stanford.edu",
+      "img": "/img/team/syamantak-payra.webp"
+    },
+    {
+      "name": "Yasmine Kehnemouyi",
+      "phd-program": "Bioengineering",
+      "undergrad-major": "Bioengineering",
+      "undergrad-university": "Berkeley",
+      "masters-major": "Bioengineering",
+      "masters-university": "Stanford",
+      "research-focus": "gut-brain axis in Parkinson's",
+      "hobbies": "swimming, drinking coffee, watching football",
+      "email": "ykehn97@stanford.edu",
+      "img": "/img/team/yasmine-kehnemouyi.webp"
+    },
+    {
+      "name": "Louise Lima",
+      "phd-program": "Bioengineering",
+      "undergrad-major": "Bioengineering",
+      "undergrad-university": "MIT",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "neuroinflammation and the gut-brain axis,",
+      "hobbies": "volleyball,hiking,cooking",
+      "email": "llima23@stanford.edu"
+    },
+    {
+      "name": "Michelle Hedlund",
+      "phd-program": "Electrical Engineering",
+      "undergrad-major": "Biomedical Engineering",
+      "undergrad-university": "Washington University in St. Louis",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "network neuroscience, neural stimulation, cognitive control",
+      "hobbies": "",
+      "email": "",
+      "img": "/img/team/michelle-hedlund.webp"
+    },
+    {
+      "name": "Sabrina Liu",
+      "phd-program": "",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "",
+      "hobbies": "",
+      "email": ""
+    },
+    {
+      "name": "Andrew Sho Perley",
+      "phd-program": "",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "",
+      "hobbies": "",
+      "email": ""
+    },
+    {
+      "name": "Leen Abdul Razzak",
+      "phd-program": "",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "masters-major": "",
+      "masters-university": "",
+      "research-focus": "",
+      "hobbies": "",
+      "email": ""
+    },
+    {
+      "name": "Sophia Shen",
+      "phd-program": "Bioengineering",
+      "undergrad-major": "Electrical Engineering",
+      "undergrad-university": "UCLA",
+      "masters-major": "Bioengineering",
+      "masters-university": "Stanford",
+      "research-focus": "brain and body during menstrual cycle",
+      "hobbies": "",
+      "email": "shensc@stanford.edu",
+      "img": "/img/team/sophia-shen.webp"
+    }
+  ],
+  "post-docs": [
+    {
+      "name": "Sarah Schoch",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "phd-advisor": "Salome Kurth, Baby Sleep Lab",
+      "phd-university": "University of Zürich",
+      "research-focus": "Sleep, dreaming, development",
+      "hobbies": "Boardgames & Videogames, animals",
+      "email": "sfschoch@stanford.edu",
+      "img": "/img/team/sarah-schoch.webp"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Takoua El Bejaoui",
+      "undergrad-major": "Mechanical Engineering (ME), B.S",
+      "undergrad-university": "SJSU",
+      "phd-advisor": "Coleman Lab's RA and Lab Safety Coordinator",
+      "phd-university": "M.S in AE, M.S in ME  from SJSU",
+      "research-focus": "Health and preserving balanced ecosystem, sustainable and non-intrusive design, animals, controls, AI",
+      "hobbies": "reading, relaxing, gaming",
+      "email": "helix2go@stanford.edu",
+      "img": "/img/team/takoua-el-bejaoui.webp"
+    },
+    {
+      "name": "Phillip Kyriakakis",
+      "undergrad-major": "Biochemistry",
+      "undergrad-university": "",
+      "phd-advisor": "Coleman lab",
+      "phd-university": "UC San Diego",
+      "research-focus": "Synthetic biology, neuroscience",
+      "hobbies": "Running, 3D printing, building stuff, working in a lab",
+      "email": "PKY@Stanford.edu"
+    },
+    {
+      "name": "Hassler Bueno Garcia",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "phd-advisor": "",
+      "phd-university": "",
+      "research-focus": "",
+      "hobbies": "",
+      "email": ""
+    },
+    {
+      "name": "Lisandro Olmedo",
+      "undergrad-major": "",
+      "undergrad-university": "",
+      "phd-advisor": "",
+      "phd-university": "",
+      "research-focus": "",
+      "hobbies": "",
+      "email": ""
+    }
+  ]
+}
