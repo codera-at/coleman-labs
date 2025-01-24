@@ -1,38 +1,70 @@
 <template>
   <div>
-    <div
-      class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-    >
-      <div v-for="member in members" :key="member.name" class="space-y-2">
+    <div class="grid-row-1 grid gap-8">
+      <div
+        v-for="member in members"
+        :key="member.name"
+        class="flex flex-row items-center space-y-2"
+      >
         <NuxtImg
           v-if="$route.params.team !== 'alumni'"
           :src="member?.img"
           :alt="member?.name"
-          :placeholder="[50, 50]"
-          width="500"
-          height="500"
-          class="rounded-3xl border border-red object-cover"
+          :placeholder="[30, 30]"
+          width="300"
+          height="300"
+          class="mr-8 rounded-3xl border border-red object-cover"
         ></NuxtImg>
-        <Headline tag="h2" size="md">{{ member.name }}</Headline>
-        <p v-if="$route.params.team === 'phd-students'">
-          {{ member["phd-program"] }}
-        </p>
-        <p v-if="$route.params.team === 'post-docs' || $route.params.team === 'staff'">
-          {{ member["undergrad-major"] }}
-        </p>
-        <a
-          :href="'mailto:' + member.email"
-          class="font-bold"
-          v-if="member.email"
-        >
-          {{ member.email }}
-        </a>
-        <template v-if="$route.params.team === 'alumni'">
-          <p>{{ member.position }}</p>
-          <p class="font-bold" v-if="member.currentPosition">
-            {{ member.currentPosition }}
-          </p>
-        </template>
+        <div>
+          <Headline tag="h2" size="md">{{ member.name }}</Headline>
+          <ul
+            v-if="
+              $route.params.team === 'phd-students' ||
+              $route.params.team === 'post-docs' ||
+              $route.params.team === 'staff'
+            "
+          >
+            <li v-if="member['phd-program']">
+              <span class="font-medium">PHD Program:</span>
+              {{ member["phd-program"] }}
+            </li>
+            <li v-if="member['undergrad-major']">
+              <span class="font-medium">Undergrad Major:</span>
+              {{ member["undergrad-major"] }}
+            </li>
+            <li v-if="member['undergrad-university']">
+              <span class="font-medium">Undergrad University:</span>
+              {{ member["undergrad-university"] }}
+            </li>
+            <li v-if="member['phd-advisor']">
+              <span class="font-medium">PHD Advisor: </span
+              >{{ member["phd-advisor"] }}
+            </li>
+            <li v-if="member['phd-university']">
+              <span class="font-medium">PHD University:</span>
+              {{ member["phd-university"] }}
+            </li>
+            <li v-if="member['research-focus']">
+              <span class="font-medium"> Research Focus:</span>
+              {{ member["research-focus"] }}
+            </li>
+            <li v-if="member['hobbies']">
+              <span class="font-medium">Hobbies:</span> {{ member["hobbies"] }}
+            </li>
+            <li v-if="member.email">
+              <a :href="'mailto:' + member.email" class="font-medium">
+                {{ member.email }}
+              </a>
+            </li>
+          </ul>
+
+          <template v-if="$route.params.team === 'alumni'">
+            <p>{{ member.position }}</p>
+            <p class="font-medium" v-if="member.currentPosition">
+              {{ member.currentPosition }}
+            </p>
+          </template>
+        </div>
       </div>
     </div>
   </div>

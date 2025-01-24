@@ -31,7 +31,15 @@
             width="700"
             height="483"
           />
-          <div class="flex flex-wrap gap-4 sm:gap-8">
+        </div>
+      </div>
+      <div
+        class="mt-32 grid grid-cols-1  gap-16 sm:grid-cols-5"
+      >
+        <div class="relative col-span-1">
+          <div
+            class="sticky top-32 flex flex-col flex-wrap gap-4 sm:gap-8"
+          >
             <NuxtLink
               class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
               :class="{
@@ -64,8 +72,8 @@
             >
           </div>
         </div>
+        <div class="col-span-4"><NuxtPage> </NuxtPage></div>
       </div>
-      <NuxtPage class="mt-16"> </NuxtPage>
     </Container>
   </div>
 </template>
@@ -75,7 +83,7 @@ const route = useRoute();
 onMounted(() => {
   console.log(route.params.team);
   if (!route.params.team) {
-    navigateTo("/team/current-members");
+    navigateTo("/team/phd-students");
   }
 });
 </script>

@@ -29,7 +29,7 @@
                   'bg-red text-white': route.path === researchArea.link,
                   'text-red': route.path !== researchArea.link,
                 }"
-                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:sm:max-w-[80%]"
+                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:font-bold first:border-2"
                 v-for="researchArea in researchAreas"
                 :key="researchArea.id"
               >

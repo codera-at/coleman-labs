@@ -12,8 +12,6 @@
       "phd-program": "Bioengineering",
       "undergrad-major": "Electrical Engineering",
       "undergrad-university": "ETH Zurich",
-      "masters-major": "",
-      "masters-university": "",
       "research-focus": "Implantables",
       "hobbies": "Relaxing",
       "email": "zaluskat@stanford.edu",
@@ -24,8 +22,6 @@
       "phd-program": "Electrical Engineering 3rd year",
       "undergrad-major": "Computation & Cognition",
       "undergrad-university": "MIT",
-      "masters-major": "Electrical Engineering",
-      "masters-university": "Stanford",
       "research-focus": "gut-brain axis during external stimuli, flexible electronic fabrication",
       "hobbies": "Hiking/camping/reading",
       "email": "alisayh@stanford.edu",
@@ -36,55 +32,46 @@
       "phd-program": "Bioengineering, 3rd year",
       "undergrad-major": "Mechanical Engineering, Biomedical Engineering",
       "undergrad-university": "Tufts",
-      "masters-major": "Bioengineering",
-      "masters-university": "Tufts",
       "research-focus": "statistical methods to characterize dynamics of brain-body physiology and behavior",
       "hobbies": "Reading, crocheting, hanging out with my dog",
       "email": "akshitar@stanford.edu",
-      "img": "/img/team/akshita-rao.webp"
+      "img": ""
     },
     {
       "name": "Syamantak Payra",
       "phd-program": "Electrical Engineering",
       "undergrad-major": "Electrical Engineering and Computer Science",
       "undergrad-university": "MIT",
-      "masters-major": "",
-      "masters-university": "",
       "research-focus": "bioelectronics and medical devices, pediatric health, gut-brain diagnostics",
       "hobbies": "playing violin, nature photography, leisurely motorcycle rides",
       "email": "spayra1@stanford.edu",
-      "img": "/img/team/syamantak-payra.webp"
+      "img": ""
     },
     {
       "name": "Yasmine Kehnemouyi",
       "phd-program": "Bioengineering",
       "undergrad-major": "Bioengineering",
       "undergrad-university": "Berkeley",
-      "masters-major": "Bioengineering",
-      "masters-university": "Stanford",
       "research-focus": "gut-brain axis in Parkinson's",
       "hobbies": "swimming, drinking coffee, watching football",
       "email": "ykehn97@stanford.edu",
-      "img": "/img/team/yasmine-kehnemouyi.webp"
+      "img": ""
     },
     {
       "name": "Louise Lima",
       "phd-program": "Bioengineering",
       "undergrad-major": "Bioengineering",
       "undergrad-university": "MIT",
-      "masters-major": "",
-      "masters-university": "",
       "research-focus": "neuroinflammation and the gut-brain axis,",
       "hobbies": "volleyball,hiking,cooking",
-      "email": "llima23@stanford.edu"
+      "email": "llima23@stanford.edu",
+      "img": ""
     },
     {
       "name": "Michelle Hedlund",
       "phd-program": "Electrical Engineering",
       "undergrad-major": "Biomedical Engineering",
       "undergrad-university": "Washington University in St. Louis",
-      "masters-major": "",
-      "masters-university": "",
       "research-focus": "network neuroscience, neural stimulation, cognitive control",
       "hobbies": "",
       "email": "",
@@ -92,44 +79,39 @@
     },
     {
       "name": "Sabrina Liu",
-      "phd-program": "",
-      "undergrad-major": "",
-      "undergrad-university": "",
-      "masters-major": "",
-      "masters-university": "",
-      "research-focus": "",
-      "hobbies": "",
-      "email": ""
+      "phd-program": "Electrical Engineering, 3rd Year",
+      "undergrad-major": "Electrical Engineering and Computer Science",
+      "undergrad-university": "MIT",
+      "research-focus": "statistical modeling of heart-brain physiology, eating disorders",
+      "hobbies": "baking, running, listening to music/ podcasts",
+      "email": "sabliu@stanford.edu",
+      "img": ""
     },
     {
       "name": "Andrew Sho Perley",
-      "phd-program": "",
-      "undergrad-major": "",
-      "undergrad-university": "",
-      "masters-major": "",
-      "masters-university": "",
-      "research-focus": "",
-      "hobbies": "",
-      "email": ""
+      "phd-program": "Bioengineering",
+      "undergrad-major": "Bioengineering",
+      "undergrad-university": "UCLA",
+      "research-focus": "gut-brain-heart electrophysiology, statistical/mathematical modelling of electrophysiology, signal processing techniques, information theory",
+      "hobbies": "Running, volleyball, thinking",
+      "email": "aperley@stanford.edu",
+      "img": ""
     },
     {
       "name": "Leen Abdul Razzak",
-      "phd-program": "",
-      "undergrad-major": "",
-      "undergrad-university": "",
-      "masters-major": "",
-      "masters-university": "",
-      "research-focus": "",
-      "hobbies": "",
-      "email": ""
+      "phd-program": "Electrical Engineering, 3rd Year",
+      "undergrad-major": "Biomedical Engineering",
+      "undergrad-university": "Northwestern University",
+      "research-focus": "Inflammation, gut-brain axis, women's health, wearable bioelectronics",
+      "hobbies": "Playing tennis, reading/writing, baking/cooking",
+      "email": "leenar@stanford.edu",
+      "img": ""
     },
     {
       "name": "Sophia Shen",
       "phd-program": "Bioengineering",
       "undergrad-major": "Electrical Engineering",
       "undergrad-university": "UCLA",
-      "masters-major": "Bioengineering",
-      "masters-university": "Stanford",
       "research-focus": "brain and body during menstrual cycle",
       "hobbies": "",
       "email": "shensc@stanford.edu",
@@ -169,7 +151,8 @@
       "phd-university": "UC San Diego",
       "research-focus": "Synthetic biology, neuroscience",
       "hobbies": "Running, 3D printing, building stuff, working in a lab",
-      "email": "PKY@Stanford.edu"
+      "email": "PKY@Stanford.edu",
+      "img": ""
     },
     {
       "name": "Hassler Bueno Garcia",
@@ -179,7 +162,8 @@
       "phd-university": "",
       "research-focus": "",
       "hobbies": "",
-      "email": ""
+      "email": "",
+      "img": ""
     },
     {
       "name": "Lisandro Olmedo",
@@ -189,7 +173,8 @@
       "phd-university": "",
       "research-focus": "",
       "hobbies": "",
-      "email": ""
+      "email": "",
+      "img": ""
     }
   ]
 }
