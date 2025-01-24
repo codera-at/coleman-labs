@@ -1,16 +1,16 @@
 <template>
   <div class="pt-16">
     <Container class="py-16 sm:py-32">
+      <Headline
+        id="team"
+        tag="h2"
+        color="secondary"
+        theme="pill"
+        custom-class="sm:ml-16 scroll-mt-32 mb-16"
+        >Team</Headline
+      >
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
         <div class="space-y-8 sm:space-y-16">
-          <Headline
-            id="team"
-            tag="h2"
-            color="secondary"
-            theme="pill"
-            custom-class="sm:ml-16 scroll-mt-32"
-            >Team</Headline
-          >
           <p class="max-w-sm">
             Our team is composed of dedicated researchers and professionals who
             are passionate about advancing the field of neural interactions. We
@@ -33,12 +33,10 @@
           />
         </div>
       </div>
-      <div
-        class="mt-32 grid grid-cols-1  gap-16 sm:grid-cols-5"
-      >
-        <div class="relative col-span-1">
+      <div class="mt-32 grid grid-cols-1 gap-16 sm:grid-cols-5">
+        <div class="sm:col-span-1">
           <div
-            class="sticky top-32 flex flex-col flex-wrap gap-4 sm:gap-8"
+            class="sticky top-32 z-0 flex flex-wrap gap-4 sm:flex-col sm:gap-8"
           >
             <NuxtLink
               class="rounded-full border border-red px-4 py-2 text-lg transition-colors hover:bg-red hover:text-white"
@@ -72,7 +70,7 @@
             >
           </div>
         </div>
-        <div class="col-span-4"><NuxtPage> </NuxtPage></div>
+        <div id="team" class="sm:col-span-4"><NuxtPage> </NuxtPage></div>
       </div>
     </Container>
   </div>
@@ -81,9 +79,11 @@
 <script setup>
 const route = useRoute();
 onMounted(() => {
-  console.log(route.params.team);
   if (!route.params.team) {
     navigateTo("/team/phd-students");
+  } else {
+    console.log("team page");
+    document.getElementById("team").scrollIntoView({ behavior: "smooth" });
   }
 });
 </script>

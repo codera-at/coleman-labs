@@ -4,11 +4,11 @@
       <div
         v-for="member in members"
         :key="member.name"
-        class="flex flex-row items-center space-y-2"
+        class="flex flex-col sm:items-center gap-2 sm:flex-row"
       >
         <NuxtImg
           v-if="$route.params.team !== 'alumni'"
-          :src="member?.img"
+          :src="member.img ? member.img : '/img/team/placeholder.jpg'"
           :alt="member?.name"
           :placeholder="[30, 30]"
           width="300"
@@ -57,12 +57,13 @@
               </a>
             </li>
           </ul>
-
           <template v-if="$route.params.team === 'alumni'">
-            <p>{{ member.position }}</p>
-            <p class="font-medium" v-if="member.currentPosition">
-              {{ member.currentPosition }}
-            </p>
+            <ul>
+              <li>{{ member.position }}</li>
+              <li class="font-medium" v-if="member.currentPosition">
+                {{ member.currentPosition }}
+              </li>
+            </ul>
           </template>
         </div>
       </div>

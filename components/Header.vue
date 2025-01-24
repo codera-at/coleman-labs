@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed left-1/2 top-0 w-full -translate-x-1/2"
+    class="z-10 fixed left-1/2 top-0 w-full -translate-x-1/2"
     :class="{ 'bg-white': isScrolled }"
   >
     <div
