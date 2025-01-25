@@ -1,9 +1,10 @@
 {
-  "vip": [
+  "principal-investigator": [
     {
       "name": "Dr. Todd Coleman",
       "position": "Associate Professor of Bioengineering and Electrical Science",
-      "img": "/img/team/member-todd-coleman.webp"
+      "email": "toddcol@stanford.edu",
+      "img": "/img/team/todd-coleman.webp"
     }
   ],
   "phd-students": [

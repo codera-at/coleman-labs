@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-10 fixed left-1/2 top-0 w-full -translate-x-1/2"
+    class="fixed left-1/2 top-0 z-10 w-full -translate-x-1/2"
     :class="{ 'bg-white': isScrolled }"
   >
     <div
@@ -45,13 +45,14 @@
             <li class="group relative" v-for="navLink in navLinks">
               <NuxtLink
                 :class="{ underline: $route.name === navLink.name }"
-                class="items-center flex gap-2"
+                class="flex items-center gap-2"
                 :to="navLink.link"
                 >{{ navLink.name }}
                 <Icon v-if="navLink.submenu" name="ph:caret-down"></Icon
               ></NuxtLink>
-              <ul v-if="navLink.submenu"
-                class="absolute hidden w-52 flex-col gap-2 rounded-b-3xl bg-red p-4 text-white group-hover:flex -left-6"
+              <ul
+                v-if="navLink.submenu"
+                class="absolute -left-6 hidden w-52 flex-col gap-2 rounded-b-3xl bg-red p-4 text-white group-hover:flex"
               >
                 <li
                   class="rounded-full px-2 py-1 hover:bg-white hover:text-red"
@@ -95,7 +96,18 @@ const navLinks = [
     ],
   },
   { name: "Publications", link: "/publications" },
-  { name: "Team", link: "/team" },
+  {
+    name: "Team",
+    link: "/team",
+    submenu: [
+      { name: "Team", link: "/team" },
+      { name: "Principal Investigator", link: "/team/principal-investigator" },
+      { name: "PhD Students", link: "/team/phd-students" },
+      { name: "Post Docs", link: "/team/post-docs" },
+      { name: "Staff", link: "/team/staff" },
+      { name: "Alumni", link: "/team/alumni" },
+    ],
+  },
   { name: "Contact", link: "/contact" },
 ];
 

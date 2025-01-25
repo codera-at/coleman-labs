@@ -29,7 +29,7 @@
                   'bg-red text-white': route.path === researchArea.link,
                   'text-red': route.path !== researchArea.link,
                 }"
-                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base first:font-bold first:border-2"
+                class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full first:border-2 first:font-bold hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base"
                 v-for="researchArea in researchAreas"
                 :key="researchArea.id"
               >
@@ -44,15 +44,6 @@
                 {{ selectedResearchArea.teaser }}
               </p>
             </Transition>
-            <!-- <Transition name="fade" mode="out-in">
-              <NuxtLink
-                v-if="selectedResearchArea.link"
-                :key="selectedResearchArea.id"
-                class="float-right mt-8 inline-block rounded-full border border-red bg-white p-2 px-4 transition-colors hover:bg-red hover:text-white"
-                :to="selectedResearchArea.link"
-                >Learn more</NuxtLink
-              >
-            </Transition> -->
           </div>
           <Transition name="fade" mode="out-in">
             <NuxtPage></NuxtPage>
