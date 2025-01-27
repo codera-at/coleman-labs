@@ -8,19 +8,15 @@
         </div>
         <div class="md:col-span-4">
           <div class="grid-cols grid grid-flow-col gap-4 md:grid-flow-row">
-            <ul class="flex flex-col gap-8 md:text-xl md:flex-row">
-              <li>Stanford Home</li>
-              <li>Maps & Directions</li>
-              <li>Search Stanford</li>
-              <li>Emergency Infos</li>
+            <ul class="flex flex-col gap-8 md:flex-row md:text-xl">
+              <li v-for="link in mainLinks" :key="link.name">
+                <a :href="link.link">{{ link.name }}</a>
+              </li>
             </ul>
             <ul class="flex flex-col gap-8 md:flex-row">
-              <li>Terms of Use</li>
-              <li>Privacy</li>
-              <li>Copyright</li>
-              <li>Trademarks</li>
-              <li>Non-Discrimination</li>
-              <li>Accesibility</li>
+              <li v-for="link in legalLinks" :key="link.name">
+                <a :href="link.link">{{ link.name }}</a>
+              </li>
             </ul>
           </div>
           <p class="mt-8">Stanford University. Stanford, California 94305</p>
@@ -30,6 +26,31 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const mainLinks = [
+  { name: "Stanford Home", link: "https://www.stanford.edu/" },
+  { name: "Maps & Directions", link: "https://visit.stanford.edu/basics/" },
+  { name: "Search Stanford", link: "https://www.stanford.edu/search/" },
+  { name: "Emergency Infos", link: "https://emergency.stanford.edu/" },
+];
+
+const legalLinks = [
+  { name: "Terms of Use", link: "https://www.stanford.edu/site/terms/" },
+  { name: "Privacy", link: "https://www.stanford.edu/site/privacy/" },
+  {
+    name: "Copyright",
+    link: "https://uit.stanford.edu/security/copyright-infringement",
+  },
+  {
+    name: "Trademarks",
+    link: "https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4",
+  },
+  {
+    name: "Non-Discrimination",
+    link: "https://non-discrimination.stanford.edu/",
+  },
+  { name: "Accesibility", link: "https://www.stanford.edu/site/accessibility" },
+];
+</script>
 
 <style lang="scss" scoped></style>
