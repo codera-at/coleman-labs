@@ -9,11 +9,22 @@
     <Container
       class="flex min-h-screen flex-wrap content-center overflow-auto px-8"
     >
-      <div class="mt-16">
-        <Headline family="serif" size="lg" weight="medium"
-          >Stanford University</Headline
-        >
-        <Headline size="xl" weight="bold">The Neural Interaction Lab</Headline>
+      <div class="mt-16 flex flex-col gap-8 sm:flex-row">
+        <div>
+          <Headline family="serif" size="lg" weight="medium"
+            >Stanford University</Headline
+          >
+          <Headline size="xl" weight="bold"
+            >The Neural Interaction Lab</Headline
+          >
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="/img/logo/Coleman_Labs_Logo_Signe_Light_Numbers.svg"
+            alt="Stanford University"
+            class="h-32 sm:h-full"
+          />
+        </div>
       </div>
       <p class="mt-16 max-w-96 text-xl sm:ml-32 sm:text-2xl">
         The Neural Interaction Lab is home to a multidisciplinary team of

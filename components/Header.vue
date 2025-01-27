@@ -13,13 +13,20 @@
         class="absolute bottom-0 right-0 h-4 w-4 translate-y-1/2 rounded-full bg-red"
       ></span>
       <div>
-        <NuxtLink to="/">
-          <span class="font-serif text-sm uppercase sm:text-base"
-            >Stanford University </span
-          ><br />
-          <span class="text-lg font-semibold uppercase sm:text-xl md:text-2xl"
-            >Neural Interaction Lab</span
-          >
+        <NuxtLink class="flex flex-row gap-4" to="/">
+          <img
+            src="/img/logo/Coleman_Labs_Logo_Signe_Light.svg"
+            alt="Stanford University Neural Interaction Lab"
+            class="h-12 hidden sm:block sm:h-16"
+          />
+          <div>
+            <span class="font-serif text-sm uppercase sm:text-base"
+              >Stanford University </span
+            ><br />
+            <span class="text-lg font-semibold uppercase sm:text-xl md:text-2xl"
+              >Neural Interaction Lab</span
+            >
+          </div>
         </NuxtLink>
       </div>
       <div

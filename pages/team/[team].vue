@@ -71,7 +71,14 @@
                 </a>
               </li>
             </ul>
-            <p class="rounded-3xl border border-red p-4 mt-4" v-if="member.bio">{{ member.bio }}</p>
+            <div
+              class="mt-4 space-y-2 rounded-3xl border border-red p-4"
+              v-if="member.bio"
+            >
+              <p v-for="paragraph in member.bio">
+                {{ paragraph }}
+              </p>
+            </div>
             <template v-if="$route.params.team === 'alumni'">
               <ul>
                 <li>{{ member.position }}</li>
