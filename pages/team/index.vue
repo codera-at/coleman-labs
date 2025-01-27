@@ -31,9 +31,11 @@
     <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16">
       <NuxtImg
         v-for="teamImg in teamImgs"
-        class="rounded-3xl border border-red w-full object-cover h-full"
+        class="rounded-3xl border border-red w-full object-cover h-full max-h-[500px]"
         :src="teamImg.src"
         width="700"
+        height="500"
+        :placeholder="[70, 50]"
       />
     </div>
   </div>

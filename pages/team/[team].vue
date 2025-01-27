@@ -15,81 +15,82 @@
       </div>
     </div>
     <div id="team" class="sm:col-span-3 lg:col-span-4">
-      <div class="grid-row-1 grid gap-8">
-        <div
-          v-for="member in members"
-          :key="member.name"
-          class="flex flex-col gap-2 sm:flex-row sm:items-center"
-        >
-          <NuxtImg
-            v-if="$route.params.team !== 'alumni'"
-            :src="member.img ? member.img : '/img/team/placeholder.jpg'"
-            :alt="member?.name"
-            :placeholder="[30, 30]"
-            width="300"
-            height="300"
-            class="mr-8 rounded-3xl border border-red object-cover"
-          ></NuxtImg>
-          <div>
-            <Headline tag="h2" size="md">{{ member.name }}</Headline>
-            <ul v-if="$route.params.team !== 'alumni'">
-              <li v-if="member['position']">
-                <span class="font-medium">Position:</span>
-                {{ member["position"] }}
-              </li>
-              <li v-if="member['phd-program']">
-                <span class="font-medium">PHD Program:</span>
-                {{ member["phd-program"] }}
-              </li>
-              <li v-if="member['undergrad-major']">
-                <span class="font-medium">Undergrad Major:</span>
-                {{ member["undergrad-major"] }}
-              </li>
-              <li v-if="member['undergrad-university']">
-                <span class="font-medium">Undergrad University:</span>
-                {{ member["undergrad-university"] }}
-              </li>
-              <li v-if="member['phd-advisor']">
-                <span class="font-medium">PHD Advisor: </span
-                >{{ member["phd-advisor"] }}
-              </li>
-              <li v-if="member['phd-university']">
-                <span class="font-medium">PHD University:</span>
-                {{ member["phd-university"] }}
-              </li>
-              <li v-if="member['research-focus']">
-                <span class="font-medium"> Research Focus:</span>
-                {{ member["research-focus"] }}
-              </li>
-              <li v-if="member['hobbies']">
-                <span class="font-medium">Hobbies:</span>
-                {{ member["hobbies"] }}
-              </li>
-              <li v-if="member.email">
-                <a :href="'mailto:' + member.email" class="font-medium">
-                  {{ member.email }}
-                </a>
-              </li>
-            </ul>
-            <div
-              class="mt-4 space-y-2 rounded-3xl border border-red p-4"
-              v-if="member.bio"
-            >
-              <p v-for="paragraph in member.bio">
-                {{ paragraph }}
-              </p>
-            </div>
-            <template v-if="$route.params.team === 'alumni'">
-              <ul>
-                <li>{{ member.position }}</li>
-                <li class="font-medium" v-if="member.currentPosition">
-                  {{ member.currentPosition }}
+      <Transition name="fade" mode="out-in">
+        <div :key="teamType" class="grid-row-1 grid gap-8">
+          <div
+            v-for="member in members"
+            class="flex flex-col gap-2 sm:flex-row sm:items-center"
+          >
+            <NuxtImg
+              v-if="$route.params.team !== 'alumni'"
+              :src="member.img ? member.img : '/img/team/placeholder.jpg'"
+              :alt="member?.name"
+              :placeholder="[30, 30]"
+              width="300"
+              height="300"
+              class="mr-8 rounded-3xl border border-red object-cover"
+            ></NuxtImg>
+            <div>
+              <Headline tag="h2" size="md">{{ member.name }}</Headline>
+              <ul v-if="$route.params.team !== 'alumni'">
+                <li v-if="member['position']">
+                  <span class="font-medium">Position:</span>
+                  {{ member["position"] }}
+                </li>
+                <li v-if="member['phd-program']">
+                  <span class="font-medium">PHD Program:</span>
+                  {{ member["phd-program"] }}
+                </li>
+                <li v-if="member['undergrad-major']">
+                  <span class="font-medium">Undergrad Major:</span>
+                  {{ member["undergrad-major"] }}
+                </li>
+                <li v-if="member['undergrad-university']">
+                  <span class="font-medium">Undergrad University:</span>
+                  {{ member["undergrad-university"] }}
+                </li>
+                <li v-if="member['phd-advisor']">
+                  <span class="font-medium">PHD Advisor: </span
+                  >{{ member["phd-advisor"] }}
+                </li>
+                <li v-if="member['phd-university']">
+                  <span class="font-medium">PHD University:</span>
+                  {{ member["phd-university"] }}
+                </li>
+                <li v-if="member['research-focus']">
+                  <span class="font-medium"> Research Focus:</span>
+                  {{ member["research-focus"] }}
+                </li>
+                <li v-if="member['hobbies']">
+                  <span class="font-medium">Hobbies:</span>
+                  {{ member["hobbies"] }}
+                </li>
+                <li v-if="member.email">
+                  <a :href="'mailto:' + member.email" class="font-medium">
+                    {{ member.email }}
+                  </a>
                 </li>
               </ul>
-            </template>
+              <div
+                class="mt-4 space-y-2 rounded-3xl border border-red p-4"
+                v-if="member.bio"
+              >
+                <p v-for="paragraph in member.bio">
+                  {{ paragraph }}
+                </p>
+              </div>
+              <template v-if="$route.params.team === 'alumni'">
+                <ul>
+                  <li>{{ member.position }}</li>
+                  <li class="font-medium" v-if="member.currentPosition">
+                    {{ member.currentPosition }}
+                  </li>
+                </ul>
+              </template>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
     </div>
   </div>
 </template>
@@ -150,5 +151,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Add any additional styles here */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
