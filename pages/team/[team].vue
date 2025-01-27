@@ -71,6 +71,7 @@
                 </a>
               </li>
             </ul>
+            <p class="rounded-3xl border border-red p-4 mt-4" v-if="member.bio">{{ member.bio }}</p>
             <template v-if="$route.params.team === 'alumni'">
               <ul>
                 <li>{{ member.position }}</li>
