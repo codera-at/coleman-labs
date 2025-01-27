@@ -17,7 +17,7 @@
           <img
             src="/img/logo/Coleman_Labs_Logo_Signe_Light.svg"
             alt="Stanford University Neural Interaction Lab"
-            class="h-12 hidden sm:block sm:h-16"
+            class="hidden h-12 sm:block sm:h-16"
           />
           <div>
             <span class="font-serif text-sm uppercase sm:text-base"
@@ -61,11 +61,11 @@
                 v-if="navLink.submenu"
                 class="absolute -left-6 hidden w-52 flex-col gap-2 rounded-b-3xl bg-red p-4 text-white group-hover:flex"
               >
-                <li
-                  class="rounded-full px-2 py-1 hover:bg-white hover:text-red"
-                  v-for="subnavLink in navLink.submenu"
-                >
-                  <NuxtLink :to="subnavLink.link">
+                <li v-for="subnavLink in navLink.submenu">
+                  <NuxtLink
+                    class="block rounded-full px-2 py-1 hover:bg-white hover:text-red"
+                    :to="subnavLink.link"
+                  >
                     {{ subnavLink.name }}
                   </NuxtLink>
                 </li>
@@ -93,11 +93,10 @@ const navLinks = [
     name: "Research",
     link: "/research",
     submenu: [
+      { name: "Mission & Vision", link: "/research" },
       { name: "Cardio", link: "/research/cardio" },
-      { name: "Sleep", link: "/research/sleep" },
       { name: "Gut", link: "/research/gut" },
       { name: "Brain Machine Interface", link: "/research/bmi" },
-      { name: "Reproduction", link: "/research/reproduction" },
       { name: "Brain Dynamics", link: "/research/brain-dynamics" },
       { name: "Applied Probability", link: "/research/applied-probability" },
     ],
