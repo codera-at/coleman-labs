@@ -8,16 +8,12 @@
           collaborate across various disciplines to push the boundaries of
           knowledge and innovation.
         </p>
-        <NuxtImg
-          class="rounded-3xl border border-red"
-          src="/img/coleman-labs-team-01.webp"
-          width="500"
-          height="333"
-        />
       </div>
       <div class="space-y-8 sm:space-y-16">
         <div>
-          <Headline tag="h2" size="md" color="secondary" theme="pill">Meet The Team</Headline>
+          <Headline tag="h2" size="md" color="secondary" theme="pill"
+            >Meet The Team</Headline
+          >
           <ul
             class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-2 sm:gap-4"
           >
@@ -30,20 +26,48 @@
             </NuxtLink>
           </ul>
         </div>
-
-        <NuxtImg
-          class="rounded-3xl border border-red"
-          src="/img/coleman-labs-team-02.webp"
-          width="700"
-          height="483"
-        />
       </div>
+    </div>
+    <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16">
+      <NuxtImg
+        v-for="teamImg in teamImgs"
+        class="rounded-3xl border border-red w-full object-cover h-full"
+        :src="teamImg.src"
+        width="700"
+      />
     </div>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
+
+const teamImgs = [
+  {
+    src: "/img/coleman-labs-team-01.webp",
+    alt: "Coleman Labs Team 01",
+  },
+  {
+    src: "/img/coleman-labs-team-02.webp",
+    alt: "Coleman Labs Team 02",
+  },
+  {
+    src: "/img/coleman-labs-team-03.webp",
+    alt: "Coleman Labs Team 03",
+  },
+  {
+    src: "/img/coleman-labs-team-04.webp",
+    alt: "Coleman Labs Team 04",
+  },
+  {
+    src: "/img/coleman-labs-team-05.webp",
+    alt: "Coleman Labs Team 05",
+  },
+  {
+    src: "/img/coleman-labs-team-06.webp",
+    alt: "Coleman Labs Team 06",
+  },
+];
 
 const teamGroups = [
   {
