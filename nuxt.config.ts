@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-particles",
     "@storyblok/nuxt",
+    "@nuxt/content",
   ],
   storyblok: {
     accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
