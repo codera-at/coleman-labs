@@ -15,6 +15,11 @@
       </div>
     </div>
     <div id="team" class="sm:col-span-3 lg:col-span-4">
+
+      <!-- Add member blok -->
+      <StoryblokComponent v-if="story" :blok="story.content" />
+
+
       <Transition name="fade" mode="out-in">
         <div :key="teamType" class="grid-row-1 grid gap-8">
           <div
@@ -50,7 +55,7 @@
                   {{ member["undergrad-university"] }}
                 </li>
                 <li v-if="member['phd-advisor']">
-                  <span class="font-medium">PHD Advisor: </span
+                  <span class="font-medium">PHD Advisor:</span
                   >{{ member["phd-advisor"] }}
                 </li>
                 <li v-if="member['phd-university']">
@@ -97,6 +102,11 @@
 
 <script setup>
 import team from "/api/current-members.json";
+
+const story = await (async () => {
+  return await useStoryblok("team/phd-students", { version: "draft" });
+})();
+
 const teamGroups = [
   {
     name: "Principal Investigator",
@@ -124,7 +134,8 @@ const teamGroups = [
     link: "/team/alumni",
   },
 ];
-const pricipalInvestigators = ref(team["principal-investigator"]);
+
+const principalInvestigators = ref(team["principal-investigator"]);
 const phdStudents = ref(team["phd-students"]);
 const postDocs = ref(team["post-docs"]);
 const staff = ref(team["staff"]);
@@ -135,7 +146,7 @@ const route = useRoute();
 const teamType = ref(route.params.team || "phd-students");
 const members = computed(() => {
   return teamType.value === "principal-investigator"
-    ? pricipalInvestigators.value
+    ? principalInvestigators.value
     : teamType.value === "phd-students"
       ? phdStudents.value
       : teamType.value === "post-docs"
@@ -146,7 +157,7 @@ const members = computed(() => {
 });
 
 onMounted(() => {
-  teamType.value = route.params.team || "current-members";
+  teamType.value = route.params.team || "phd-students";
 });
 </script>
 
