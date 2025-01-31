@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     "@storyblok/nuxt",
     "@nuxt/content",
   ],
+  content: {
+    preview: {
+      // force module initialization on dev env
+      dev: true
+    }
+  },
   storyblok: {
     accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
   },
