@@ -12,29 +12,23 @@
     "slug": "cardio",
     "link": "/research/cardio",
     "img": "/img/research/Figur_Cardio.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
-    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave.",
+    "teaser": "The cardiovascular (CV) system and the autonomic nervous system (ANS) are tightly linked in both a top-down and bottom-up manner. The Neural Interaction Lab is developing hardware to noninvasively record electrical, optical, and other signals from the CV system for various clinical and ambulatory applications. Using this data, various mathematical models are being formulated to help understand the changes in the ANS under various disease states as well as in health.",
+    "description": "",
     "publications": [
       {
-        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
-        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
-        "journal": "IEEE Transactions on Biomedical Engineering",
-        "month": "March",
-        "year": "2020"
+        "title": "An Efficient Framework for Solving a Convex, State-Space Heartbeat Dynamics Model",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=100&pagesize=100&citation_for_view=x5HMEUEAAAAJ:oNZyr7d5Mn4C",
+        "authors": "S Liu, AS Perley, TP Coleman",
+        "journal": "46th Annual International Conference of the IEEE Engineering in …",
+        "year": 2024
       },
       {
-        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
-        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
-        "journal": "Clinical Gastroenterology and Hepatology",
-        "month": "December",
-        "year": 2019
-      },
-      {
-        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
-        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
-        "journal": "PLOS ONE",
-        "month": "October",
-        "year": 2019
+        "title": "A Convex Formulation of Point Process Heartbeat Dynamics using a Gamma Generalized Linear Model",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=100&pagesize=100&citation_for_view=x5HMEUEAAAAJ:EYYDruWGBe4C",
+        "authors": "A Perley, S Subramanian, TP Coleman",
+        "journal": "IEEE 19th International Conference on Body Sensor Networks (BSN)",
+        "pages": "1-5",
+        "year": 2023
       }
     ]
   },
@@ -44,29 +38,64 @@
     "slug": "flexible-electronics",
     "link": "/research/flexible-electronics",
     "img": "/img/research/Figur_Flexible_Electronics.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
-    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave.",
+    "teaser": "To overcome limitations in physiologic data acquisition for human-computer interaction systems, researchers developed stretchable, foldable electrode arrays that non-invasively monitor signals like EEG, EMG, and ECG, enabling seamless integration with the human body for real-world applications.",
+    "description": "The bottleneck in developing novel physiology-guided human computer interaction systems such as BCIs is how the physiologic data is acquired. As such, our group began to collaborate with materials scientists so that we may pivot into also developing novel technologies that can acquire high-fidelity physiologic data from the human body. We go beyond conventional physiologic data acquisition systems which have limited ability to monitor people in their normal daily lives, in no small part because of the adage from physics: “in the process of measuring a system, you undoubtedly perturb it”. In a 2011 Science paper, our group has recently demonstrated foldable, stretchable electrode arrays that can non-invasively measure physiologic signals (including EEG, EMG, ECG) without the need for gel. The electrodes rely on layouts recently developed for silicon electronics that offer linear elastic responses to applied force, with the capacity to fold, twist and deform into various curved shapes. Stretchable electronics have the key advantage that they can wrap arbitrary, curvilinear surfaces and, at the same time, achieve mechanical properties that approach those of tissues of the human body (e.g. skin). These capabilities are especially significant for applications in skin-mounted devices to monitor physiology in mobile environments.",
     "publications": [
       {
-        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
-        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
+        "title": "Epidermal electrode technology for detecting ultrasonic perturbation of sensory brain activity",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:JoZmwDi-zQgC",
+        "authors": "Huang, S., Fisher, J. A. N., Ye, M., Kim, Y. S., Ma, R., Nabili, M., Krauthamer, Victor., Myers, M. R. , Coleman, T. P. , Welle, C. G.",
         "journal": "IEEE Transactions on Biomedical Engineering",
-        "month": "March",
-        "year": "2020"
+        "month": "January",
+        "year": 2018
       },
       {
-        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
-        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
-        "journal": "Clinical Gastroenterology and Hepatology",
-        "month": "December",
-        "year": 2019
+        "title": "Scalable Manufacturing of Solderable and Stretchable Physiologic Sensing Systems",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:N5tVd3kTz84C",
+        "authors": "Kim, Y. S., Lu, J., Shih, B., Gharibans, A., Zou, Z., Matsuno, K., Aguilera, R., Xiao, J., Meek, A., Tolley, M., & Coleman, T. P.",
+        "journal": "Advanced Materials",
+        "month": "August",
+        "year": 2017
       },
       {
-        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
-        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
-        "journal": "PLOS ONE",
-        "month": "October",
-        "year": 2019
+        "title": "Stretchable and flexible adhesive-integrated antenna for biomedical applications",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:SP6oXDckpogC",
+        "authors": "Haj-Omar, A., Thompson, W. L., Kim, Y. S., Glick, P., Tolley, M., & Coleman, T. P.",
+        "journal": "Antennas and Propagation (APSURSI)",
+        "month": "June",
+        "year": 2016
+      },
+      {
+        "title": "Adaptive Flexible Antennas for Wireless Biomedical Applications",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:yB1At4FlUx8C",
+        "authors": "Haj-Omar, A., W. Thompson, Y.S. Kim, and T. P. Coleman",
+        "journal": "IEEE Wireless and Microwave Technology Conference",
+        "month": "April",
+        "year": 2016
+      },
+      {
+        "title": "Scalable microfabrication procedures for adhesive-integrated flexible and stretchable electronic sensors",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:ULOm3_A8WrAC",
+        "authors": "D. Kang, Y. S. Kim, G. Ornelas, M. Sinha, K. Naidu, and T. P. Coleman",
+        "journal": "Sensors",
+        "month": "September",
+        "year": 2015
+      },
+      {
+        "title": "Fractal design concepts for stretchable electronics",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:dTyEYWd-f8wC",
+        "authors": "J. A. Fan, W. Yeo, Y. Su, Y. Hattori, W. Lee, S. Jung, Y. Zhang, Z. Liu, H. Cheng, L. Falgout, M. Bajema, T. P. Coleman , D. Gregoire, R. J. Larsen, Y. Huang, and J. A. Rogers",
+        "journal": "Nature Communications",
+        "month": "February",
+        "year": 2014
+      },
+      {
+        "title": "Epidermal Electronics",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:d1gkVwhDpl0C",
+        "authors": "D. H. Kim, N. Lu, R. Ma, Y.S. Kim, R.H. Kim, S. W, S. M. Won, H. Tao, A. Islam, K.J. Yu, T. Kim, R. Chowdhury, M. Ying, L. Xu, J. Wu, M. Li, H.J. Chung, F. G. Omenetto, Y. Huang, T. P. Coleman, J. A. Rogers",
+        "journal": "Science",
+        "month": "August",
+        "year": 2011
       }
     ]
   },
@@ -108,29 +137,72 @@
     "slug": "bmi",
     "link": "/research/bmi",
     "img": "/img/research/Figur_BMI.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
-    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive",
+    "teaser": "By interpreting brain-computer interfaces (BCIs) as cooperative multi-agent systems, researchers have applied feedback information theory and control theory to develop theoretically optimal, user-friendly brain-machine interfaces, enabling new capabilities such as multi-user collaboration and enhanced task performance through optimal feedback-based encoding and stochastic control principles.",
+    "description": "A brain-computer interface (BCI) is a system comprising a direct communication pathway between the brain and an external device. Our research group has developed an interpretation of the BCI as a system comprising multiple agents cooperating to achieve a common goal. This “team decision theory” viewpoint has led us to leverage insights from feedback information theory and control theory to develop direct brain control systems that are easy to use, and are theoretically optimal. In short, must be communicated to the interface via recorded brain signals – and given feedback from the interface’s dynamics – so that it may help the user accomplish a task. This new interpretation, wed with recent results on implementable, optimal, feedback information theoretic coding schemes (titled “posterior matching schemes”), led us to design brain-machine interface paradigms from decentralized control and feedback information-theoretic perspective. We have shown that this framework has allowed us to design BCIs that can accomplish tasks that previously before were not possible, and/or with previously unachieved performance. For example, we have been able to use recent works of feedback information theory and optimal transport theory to allow for multi-user collaborative BCIs. The essence of the optimal feedback-based posterior matching scheme – to communicate to the decoder information about the message that is “statistically independent of everything the decoder has seen so far” – led to the hypothesis that its structure is intimately related to stochastic control. As such, it indeed is acting like an optimal stochastic controller, over the space of posteriors, or decoder’s beliefs about the message. This work shows that an optimal feedback encoding scheme acts to geometrically “steer” the decoder’s belief towards certainty at the message point. We have been able to extend posterior matching to applications where the message point is in arbitrary dimensions, and use the theory of optimal transport to develop methods to construct recursive and optimal strategies.",
     "publications": [
       {
-        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
-        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
-        "journal": "IEEE Transactions on Biomedical Engineering",
-        "month": "March",
-        "year": "2020"
+        "title": "Dynamical systems, ergodicity, and posterior matching",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=100&pagesize=100&citation_for_view=x5HMEUEAAAAJ:zLWjf1WUPmwC",
+        "authors": "T. P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory (ISIT)",
+        "month": "June",
+        "year": 2017
       },
       {
-        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
-        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
-        "journal": "Clinical Gastroenterology and Hepatology",
-        "month": "December",
-        "year": 2019
+        "title": "An information and control framework for optimizing user-compliant human–computer interfaces",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:BqipwSGYUEgC",
+        "authors": "J. Tantiongloc., D. A. Mesa, R. Ma, S. Kim, C. Gil, J. C. Rosa, V. Manian, and T. P. Coleman",
+        "journal": "Proceedings of the IEEE",
+        "month": "January",
+        "year": 2017
       },
       {
-        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
-        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
-        "journal": "PLOS ONE",
-        "month": "October",
-        "year": 2019
+        "title": "An optimizer's approach to stochastic control problems with nonclassical information structures",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:u_35RYKgDlwC",
+        "authors": "A. Kulkarni and T. P. Coleman",
+        "journal": "IEEE Transactions on Automatic Control",
+        "month": "April",
+        "year": 2015
+      },
+      {
+        "title": "A feedback information-theoretic approach to the design of brain-computer interfaces",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:Fu2w8maKXqMC",
+        "authors": "C. Omar, A. Akce, M. Johnson, T. Bretl, R. Ma, E. Maclin, M. McCormick, and T. P. Coleman",
+        "journal": "International Journal on Human-Computer Interaction",
+        "month": "January",
+        "year": 2011
+      },
+      {
+        "title": "A stochastic control approach to optimally designing hierarchical flash sets in P300 communication prostheses",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:M05iB0D1s5AC",
+        "authors": "R. Ma, N. Aghasadeghi, J. A. Jarzebowski, T. W. Bretl, and T. P. Coleman",
+        "journal": "IEEE Trans on Neural Systems and Rehabilitation Engineering (TNSRE)",
+        "month": "January",
+        "year": 2012
+      },
+      {
+        "title": "Equivalence Between Reliable Feedback Communication and Nonlinear Filter Stability",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:eMMeJKvmdy0C",
+        "authors": "S. K. Gorantla, and T. P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory",
+        "month": "August",
+        "year": 2011
+      },
+      {
+        "title": "Generalizing the Posterior Matching Scheme to Higher Dimensions via Optimal Transportation",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:5nxA0vEk-isC",
+        "authors": "R. Ma, and T. P. Coleman",
+        "journal": "Allerton Conference on Communication, Control, and Computing",
+        "month": "September",
+        "year": 2011
+      },
+      {
+        "title": "A stochastic control viewpoint on 'posterior matching'-style feedback communication schemes",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:qxL8FJ1GzNcC",
+        "authors": "T. P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory (ISIT)",
+        "month": "June",
+        "year": 2009
       }
     ]
   },
@@ -140,29 +212,17 @@
     "slug": "brain-dynamics",
     "link": "/research/brain-dynamics",
     "img": "/img/research/Figur_Brain_Dynamics.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
-    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
+    "teaser": "Brain dynamics involve complex neural oscillations that regulate cognition and behavior, with phase-amplitude coupling (PAC) playing a crucial role in brain function and disorders, and recent advances using mutual information with high-dimensional models improve PAC detection, revealing deeper connections between neural activity and physiological systems like the gut-brain axis.",
+    "description": "The human brain is a highly dynamic system, constantly processing information through the coordinated activity of neural circuits. Neural oscillations, or brain waves, are rhythmic fluctuations in electrical activity that help regulate cognitive functions, motor control, and even interactions between the brain and other physiological systems. These oscillations occur at different frequencies, from slow delta waves associated with deep sleep to high-frequency gamma waves linked to complex cognitive tasks. A key aspect of brain dynamics is the interplay between these oscillations, particularly through mechanisms like phase-amplitude coupling (PAC), where the phase of a slow wave modulates the amplitude of a faster wave. This cross-frequency coupling is increasingly recognized as a biomarker of brain function and dysfunction, playing a role in conditions such as epilepsy, Parkinson's disease, and psychiatric disorders. Recent research has extended the concept of PAC beyond the brain, revealing coupling between brain rhythms and peripheral physiological signals, such as the gastric slow wave, which suggests a deeper connection between neural activity and the gut-brain axis. To accurately measure PAC, traditional methods have relied on non-parametric techniques, but recent advancements introduce statistical models that better capture the underlying dependencies. One such approach utilizes mutual information with high-dimensional sparse models, allowing for more precise detection of low-level PAC, even in noisy conditions. By employing flexible parametric modeling with von-Mises function regressors and ℓ1 regularization, these methods refine our ability to study brain oscillations and their role in health and disease. As our understanding of neural dynamics advances, improved analytical tools will continue to shed light on how oscillatory activity supports cognition, behavior, and even inter-organ communication, opening new avenues for both neuroscience research and clinical applications.",
     "publications": [
       {
-        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
-        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
-        "journal": "IEEE Transactions on Biomedical Engineering",
-        "month": "March",
-        "year": "2020"
-      },
-      {
-        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
-        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
-        "journal": "Clinical Gastroenterology and Hepatology",
-        "month": "December",
-        "year": 2019
-      },
-      {
-        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
-        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
-        "journal": "PLOS ONE",
-        "month": "October",
-        "year": 2019
+        "title": "A mutual information measure of phase-amplitude coupling using gamma generalized linear models",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=100&pagesize=100&citation_for_view=x5HMEUEAAAAJ:lmc2jWPfTJgC",
+        "authors": "AS Perley, TP Coleman",
+        "journal": "Frontiers in Computational Neuroscience",
+        "volume": 18,
+        "article": 1392655,
+        "year": 2024
       }
     ]
   },
@@ -172,29 +232,47 @@
     "slug": "applied-probability",
     "link": "/research/applied-probability",
     "img": "/img/research/Figur_Applied_Probability.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
-    "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
+    "teaser": "Researchers have developed efficient, parallelizable methods for computing measure transport maps, leveraging convex optimization and nonequilibrium thermodynamics to address uncertainty in high-dimensional datasets, with applications in Bayesian inference, active learning, probabilistic sleep staging, and generative modeling.",
+    "description": "The need to reason about uncertainty in large, complex, and multi-modal datasets has become increasingly common across modern scientific environments. The ability to transform samples from one distribution P to another distribution Q enables the solution to many problems in machine learning and has been actively pursued from theoretical, computational, and application perspectives across the fields of information theory, computer science, and biology. Performing such transformations in general purpose manners still comprises computational difficulties, especially in high dimensions. Recently, we consider the problem of computing such “measure transport maps” with efficient and parallelizable methods. Under very mild assumptions, we provide a convex optimization problem to constructing such maps from only samples of P. We recently have also leveraged findings from nonequilibrium thermodynamics to represent the transport map as a composition of simpler maps, each of which is learned sequentially with another related efficiently solvable convex optimization algorithm. We are currently using this framework within the context of Bayesian inference for uncertainty quantification in biomedical datasets, active learning for human computer interfaces, density estimation for probabilistic sleep staging with EEG, and generative modeling with images.",
     "publications": [
       {
-        "title": "A Deep Convolutional Neural Network Approach to Classify Normal and Abnormal Gastric Slow Wave Initiation from the High Resolution Electrogastrogram",
-        "authors": "A. S. Agrusa, A. A. Gharibans, A. A. Allegra, D. C. Kunkel, and T. P. Coleman",
-        "journal": "IEEE Transactions on Biomedical Engineering",
-        "month": "March",
-        "year": "2020"
+        "title": "A Distributed Framework for the Construction of Transport Maps",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:kuK5TVdYjLIC",
+        "authors": "D. A. Mesa, J. Tantiongloc, M. Mendoza, S. Kim, and T. P. Coleman",
+        "journal": "Neural Computation",
+        "month": "April",
+        "year": 2019
       },
       {
-        "title": "Spatial Patterns From High-Resolution Electrogastrography Correlate With Severity of Symptoms in Patients With Functional Dyspepsia and Gastroparesis",
-        "authors": "A. A. Gharibans, T. P. Coleman, H. M. Mousa, and D. C. Kunkel",
-        "journal": "Clinical Gastroenterology and Hepatology",
+        "title": "Diffeomorphism learning via relative entropy constrained optimal transport",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=100&pagesize=100&citation_for_view=x5HMEUEAAAAJ:TIZ-Mc8IlK0C",
+        "authors": "T.P. Coleman, J. Tantiongloc, A. Allegra, D. Mesa, D. Kang, & M. Mendoza",
+        "journal": "IEEE Global Conference on Signal and Information Processing (GlobalSIP)",
         "month": "December",
-        "year": 2019
+        "year": 2016
       },
       {
-        "title": "Bayesian Inverse Methods for Spatiotemporal Characterization of Gastric Electrical Activity from Cutaneous Multi-electrode Recordings",
-        "authors": "A. A. Allegra, A. A. Gharibans,G. Schamberg, D. C. Kunkel, and T. P. Coleman",
-        "journal": "PLOS ONE",
-        "month": "October",
-        "year": 2019
+        "title": "A scalable framework to transform samples from one continuous distribution to another",
+        "authors": "D. Mesa, S. Kim, & T.P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory (ISIT)",
+        "month": "June",
+        "year": 2015
+      },
+      {
+        "title": "Efficient total probability prediction via convex optimization and optimal transport",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=200&pagesize=100&citation_for_view=x5HMEUEAAAAJ:CHSYGLWDkRkC",
+        "authors": "S. Kim, D. Mesa, & T.P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory (ISIT)",
+        "month": "June",
+        "year": 2015
+      },
+      {
+        "title": "Efficient Bayesian inference methods via convex optimization and optimal transport",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&pagesize=100&citation_for_view=x5HMEUEAAAAJ:hMsQuOkrut0C",
+        "authors": "S. Kim, R. Ma, D. Mesa, & T.P. Coleman",
+        "journal": "IEEE International Symposium on Information Theory (ISIT)",
+        "month": "July",
+        "year": 2013
       }
     ]
   }

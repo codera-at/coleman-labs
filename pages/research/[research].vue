@@ -3,9 +3,13 @@
     <Headline tag="h2" color="secondary" theme="pill" custom-class="">
       {{ research.title }}
     </Headline>
-    <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
+    <div
+      v-if="research.description"
+      class="mt-8 space-y-4 rounded-3xl border border-red p-4"
+    >
       <p>{{ research.description }}</p>
     </div>
+    <br v-else />
     <Headline
       tag="h2"
       color="secondary"
@@ -18,9 +22,14 @@
     <div class="mt-8 space-y-4 rounded-3xl border border-red p-4">
       <ul class="space-y-4">
         <li v-for="publication in research.publications">
-          {{ publication.authors }}, "{{ publication.title }}"
-          <em>{{ publication.journal }}</em
-          >, {{ publication.month }} {{ publication.year }}.
+          <NuxtLink :to="publication.link">
+            <span class="text-lg font-bold">{{
+              publication.title
+            }}</span></NuxtLink
+          >
+          <p>{{ publication.authors }}</p>
+          <p>{{ publication.journal }}</p>
+          <p>{{ publication.month }} {{ publication.year }}</p>
         </li>
       </ul>
     </div>
@@ -30,7 +39,6 @@
 <script setup>
 import researchAreas from "/api/research.json";
 const route = useRoute();
-
 
 const research = researchAreas.find(
   (research) => research.slug === route.params.research,
