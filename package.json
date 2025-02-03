@@ -14,7 +14,6 @@
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.1",
     "@nuxt/image": "^1.8.1",
-    "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@storyblok/nuxt": "^6.2.2",
     "gsap": "^3.12.5",

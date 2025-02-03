@@ -10,12 +10,12 @@ export default defineNuxtConfig({
     "nuxt-particles",
     "@storyblok/nuxt",
     "@nuxt/content",
-    "@nuxthq/studio",
   ],
   content: {
     preview: {
       // force module initialization on dev env
       dev: true,
+      api: "https://api.nuxt.studio",
     },
   },
   storyblok: {
