@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     preview: {
       // force module initialization on dev env
       dev: true,
-      api: "https://api.nuxt.studio",
+      api: "https://content.coleman.codera.at",
     },
   },
   storyblok: {
