@@ -105,7 +105,7 @@
     "slug": "gut",
     "link": "/research/gut",
     "img": "/img/research/Figur_Gut.svg",
-    "teaser": "Here comes a brief text describing this topic. For further information can be found below.",
+    "teaser": "The importance of gastrointestinal (GI) health is increasingly recognized, yet the lack of robust, non-invasive systems for GI electrophysiologic assessment hinders our understanding of its impact on health and disease. Our development of the high-resolution electrogastrogram (HR-EGG) offers a noninvasive method to diagnose and understand functional motility disorders, potentially leading to improved patient care and novel therapies.",
     "description": "Although the importance of gastrointestinal (GI) health is increasingly recognized, the lack of a robust, non-invasive system for objective GI electrophysiologic assessment hinders complete understanding of the impact of GI in health and disease. Novel approaches to diagnose and understand functional motility disorders are critical to improve patient care, offer effective and personalized therapies, and reduce treatment costs. Current clinical tools to diagnose most GI conditions are invasive (e.g. endoscopy or manometry) or require radiation (e.g. gastric emptying scintigraphy). The gastric slow-wave is generated in a pacemaker region of the stomach, analogous to the heart, and propagates axially down the length of the stomach to the small intestines. This leads to the mechanical contractions (i.e. peristalsis) that breaks down food and propels it along the GI tract. Recent studies have established the link between gastric slow wave propagation abnormalities and gastric functional motility diseases, such as gastroparesis, chronic nausea and vomiting, and functional dyspepsia. We have developed the high-resolution electrogastrogram (HR-EGG), which is a method of extracting features of gastric wave propagation using a noninvasive multi-electrode array. We can determine the presence of peristaltic waves, along with its propagation direction and speed. We believe this work is a step towards improving the diagnosis of GI diseases and has the potential to inspire novel drugs and therapies, ultimately improving clinical outcomes.",
     "publications": [
       {
@@ -252,8 +252,9 @@
         "year": 2016
       },
       {
-        "title": "A scalable framework to transform samples from one continuous distribution to another",
-        "authors": "D. Mesa, S. Kim, & T.P. Coleman",
+        "title": "Efficient total probability prediction via convex optimization and optimal transport",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=x5HMEUEAAAAJ&cstart=200&pagesize=100&citation_for_view=x5HMEUEAAAAJ:CHSYGLWDkRkC",
+        "authors": "S Kim, D Mesa, T Coleman",
         "journal": "IEEE International Symposium on Information Theory (ISIT)",
         "month": "June",
         "year": 2015
