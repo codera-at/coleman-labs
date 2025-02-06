@@ -17,7 +17,7 @@
     <div id="team" class="sm:col-span-3 lg:col-span-4">
 
       <!-- Add member blok -->
-      <StoryblokComponent v-if="story" :blok="story.content" />
+      <!-- <StoryblokComponent v-if="story" :blok="story.content" /> -->
 
 
       <Transition name="fade" mode="out-in">
