@@ -14,7 +14,7 @@ export default defineContentConfig({
     }),
     data: defineCollection({
       type: "data",
-      source: "data/*.md",
+      source: "data/*.json",
       schema: z.object({
         title: z.string(),
         members: z.array(object({ name: z.string(), link: z.string() })),
