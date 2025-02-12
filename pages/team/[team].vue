@@ -15,12 +15,28 @@
       </div>
     </div>
     <div id="team" class="sm:col-span-3 lg:col-span-4">
-
       <!-- Add member blok -->
-      <!-- <StoryblokComponent v-if="story" :blok="story.content" /> -->
-
-
-      <Transition name="fade" mode="out-in">
+      <StoryblokComponent
+        v-if="teamType === 'principal-investigator'"
+        :blok="principalInvestigators.content"
+      />
+      <StoryblokComponent
+        v-else-if="teamType === 'phd-students'"
+        :blok="phdStudents.content"
+      />
+      <StoryblokComponent
+        v-else-if="teamType === 'post-docs'"
+        :blok="postDocs.content"
+      />
+      <StoryblokComponent
+        v-else-if="teamType === 'staff'"
+        :blok="staff.content"
+      />
+      <StoryblokComponent
+        v-else-if="teamType === 'alumni'"
+        :blok="alumni.content"
+      />
+      <!-- <Transition name="fade" mode="out-in">
         <div :key="teamType" class="grid-row-1 grid gap-8">
           <div
             v-for="member in members"
@@ -95,18 +111,12 @@
             </div>
           </div>
         </div>
-      </Transition>
+      </Transition> -->
     </div>
   </div>
 </template>
 
 <script setup>
-import team from "/api/current-members.json";
-
-const story = await (async () => {
-  return await useStoryblok("team/phd-students", { version: "draft" });
-})();
-
 const teamGroups = [
   {
     name: "Principal Investigator",
@@ -135,26 +145,38 @@ const teamGroups = [
   },
 ];
 
-const principalInvestigators = ref(team["principal-investigator"]);
-const phdStudents = ref(team["phd-students"]);
-const postDocs = ref(team["post-docs"]);
-const staff = ref(team["staff"]);
+const principalInvestigators = await (async () => {
+  return await useStoryblok("team/principal-investigator", {
+    version: "draft",
+  });
+})();
 
-import alumni from "/api/alumni.json";
+const phdStudents = await (async () => {
+  return await useStoryblok("team/phd-students", {
+    version: "draft",
+  });
+})();
+
+const postDocs = await (async () => {
+  return await useStoryblok("team/post-docs", {
+    version: "draft",
+  });
+})();
+
+const staff = await (async () => {
+  return await useStoryblok("team/staff", {
+    version: "draft",
+  });
+})();
+
+const alumni = await (async () => {
+  return await useStoryblok("team/alumni", {
+    version: "draft",
+  });
+})();
 
 const route = useRoute();
 const teamType = ref(route.params.team || "phd-students");
-const members = computed(() => {
-  return teamType.value === "principal-investigator"
-    ? principalInvestigators.value
-    : teamType.value === "phd-students"
-      ? phdStudents.value
-      : teamType.value === "post-docs"
-        ? postDocs.value
-        : teamType.value === "staff"
-          ? staff.value
-          : alumni;
-});
 
 onMounted(() => {
   teamType.value = route.params.team || "phd-students";

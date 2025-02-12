@@ -9,15 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-particles",
     "@storyblok/nuxt",
-    "@nuxt/content",
   ],
-  content: {
-    preview: {
-      // force module initialization on dev env
-      api: "https://api.nuxt.studio",
-      dev: true,
-    },
-  },
   storyblok: {
     accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
   },
