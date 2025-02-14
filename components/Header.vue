@@ -91,12 +91,12 @@ const navLinks = [
   { name: "Home", link: "/" },
   {
     name: "Research",
-    link: "/research",
+    link: "/research/mission-vision",
     submenu: [
-      { name: "Mission & Vision", link: "/research" },
+      { name: "Mission & Vision", link: "/research/mission-vision" },
       { name: "Cardio", link: "/research/cardio" },
       { name: "Gut", link: "/research/gut" },
-      { name: "Brain Machine Interface", link: "/research/bmi" },
+      { name: "Brain Machine Interface", link: "/research/brain-machine-interface" },
       { name: "Brain Dynamics", link: "/research/brain-dynamics" },
       { name: "Applied Probability", link: "/research/applied-probability" },
     ],

@@ -17,46 +17,40 @@
             <ul
               class="mt-8 flex flex-wrap content-stretch items-stretch justify-stretch gap-2 sm:gap-4"
             >
-              <li
-                @click="
-                  () => {
-                    if (researchArea.link) {
-                      navigateTo(researchArea.link);
-                    }
-                  }
-                "
+              <NuxtLink
+                :to="researchArea.slug"
                 :class="{
-                  'bg-red text-white': route.path === researchArea.link,
-                  'text-red': route.path !== researchArea.link,
+                  'bg-red text-white':
+                    route.params.research === researchArea.slug,
+                  'text-red': route.params.research !== researchArea.slug,
                 }"
                 class="grow cursor-pointer rounded-full border border-red px-2 py-2 text-center text-sm transition-all first:w-full first:border-2 first:font-bold hover:grow-[10] hover:bg-red hover:text-white sm:px-4 sm:text-base"
                 v-for="researchArea in researchAreas"
                 :key="researchArea.id"
               >
-                {{ researchArea.title }}
-              </li>
+                {{ researchArea.name }}
+              </NuxtLink>
             </ul>
-            <Transition name="fade" mode="out-in">
+            <!-- <Transition name="fade" mode="out-in"> -->
               <p
                 :key="selectedResearchArea.id"
+                v-html="renderRichText(selectedResearchArea.content.teaser)"
                 class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4"
-              >
-                {{ selectedResearchArea.teaser }}
-              </p>
-            </Transition>
+              ></p>
+            <!-- </Transition> -->
           </div>
-          <Transition name="fade" mode="out-in">
+          <!-- <Transition name="fade" mode="out-in"> -->
             <NuxtPage></NuxtPage>
-          </Transition>
+          <!-- </Transition> -->
         </div>
         <div class="relative -z-10 order-first sm:order-last">
-          <Transition name="fade" mode="out-in">
+          <!-- <Transition name="fade" mode="out-in"> -->
             <img
               class="sticky top-32 max-h-[80vh]"
-              :src="selectedResearchArea.img"
+              :src="selectedResearchArea.content.illustration.filename"
               :key="selectedResearchArea.id"
             />
-          </Transition>
+          <!-- </Transition> -->
         </div>
       </div>
     </Container>
@@ -64,20 +58,30 @@
 </template>
 
 <script setup>
-import researchAreas from "/api/research.json";
+const storyblokApi = useStoryblokApi();
+const { data } = await storyblokApi.get("cdn/stories", {
+  version: "draft",
+  starts_with: "research",
+  is_startpage: false,
+});
+
+const researchAreas = data.stories;
 const route = useRoute();
-const selectedResearchAreaId = ref(0);
+
+// const selectedResearchAreaId = ref(0);
 const selectedResearchArea = computed(() => {
-  console.log(route);
   return (
-    researchAreas.find((researchArea) => researchArea.link === route.path) || {}
+    researchAreas.find(
+      (researchArea) => researchArea.slug === route.params.research,
+    ) || {}
   );
 });
-onMounted(() => {
-  if (researchAreas.length > 0) {
-    selectedResearchAreaId.value = researchAreas[0].id;
-  }
-});
+
+// onMounted(() => {
+//   if (researchAreas.length > 0) {
+//     selectedResearchAreaId.value = researchAreas[0].id;
+//   }
+// });
 </script>
 
 <style>
