@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-particles",
     "@storyblok/nuxt",
+    "@nuxtjs/seo",
   ],
   storyblok: {
     accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
@@ -29,5 +30,11 @@ export default defineNuxtConfig({
       { name: "SourceSans3", provider: "local" },
       { name: "SourceSerif4", provider: "local" },
     ],
+  },
+  site: {
+    url: "https://colemanlab.stanford.edu/",
+    name: "The Neural Interaction Lab",
+    description:
+      "The Coleman Lab is home to a diverse team of researchers studying a variety of disciplines including: Bioengineering, Electrical Engineering, Biology, Computer Science, and more. Check out our other pages for more information!",
   },
 });
