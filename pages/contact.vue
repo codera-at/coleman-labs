@@ -44,34 +44,6 @@
         </div>
       </div>
     </Container>
-    <Spacer />
-    <Container class="pb-32 pt-8">
-      <Headline tag="h4" size="sm" transform="none" weight="semibold"
-        ><span class="font-serif">Stanford</span> Engineering</Headline
-      >
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <p>Wu Tsai Neurosciences Building</p>
-            <p class="font-light">
-              290 Campus Drive <br />
-              Stanford, CA 94305 <br />
-              United States
-            </p>
-          </div>
-          <div>
-            <p>Links to</p>
-            <NuxtLink to="/" class="font-light">
-              Wu Tsai Neurosciences Institute
-            </NuxtLink>
-          </div>
-        </div>
-        <div>
-          <p>Resources for</p>
-          <NuxtLink to="/" class="font-light"> Covid-19 Updates </NuxtLink>
-        </div>
-      </div>
-    </Container>
   </div>
 </template>
 
