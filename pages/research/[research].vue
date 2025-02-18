@@ -5,10 +5,15 @@
 </template>
 
 <script setup>
-const slug = useRoute().params.research;
+definePageMeta({
+  pageTransition: {
+    name: "fade",
+  },
+});
 
+const slug = useRoute().params.research;
 const researchStory = await useAsyncStoryblok(
-  slug && slug.length > 0 ? "research/" + slug : "/research/mission-vision",
+  slug && slug.length > 0 ? "research/" + slug : "/research",
   {
     version: "draft",
   },

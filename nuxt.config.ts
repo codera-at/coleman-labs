@@ -13,6 +13,11 @@ export default defineNuxtConfig({
   storyblok: {
     accessToken: "GWCR9ZIB5UCzHBdmYWFlGAtt",
   },
+  image: {
+    storyblok: {
+      baseURL: "https://a.storyblok.com",
+    },
+  },
   build: {
     transpile: ["gsap"],
   },

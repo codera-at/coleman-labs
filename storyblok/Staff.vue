@@ -9,6 +9,7 @@
       "
       :alt="blok.name"
       :placeholder="[30, 30]"
+      provider="storyblok"
       width="300"
       height="300"
       class="mr-8 rounded-3xl border border-red object-cover"

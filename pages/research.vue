@@ -31,26 +31,33 @@
                 {{ researchArea.name }}
               </NuxtLink>
             </ul>
-            <!-- <Transition name="fade" mode="out-in"> -->
-              <p
+            <Transition name="fade" mode="out-in">
+              <div
                 :key="selectedResearchArea.id"
-                v-html="renderRichText(selectedResearchArea.content.teaser)"
+                v-if="
+                  selectedResearchArea && selectedResearchArea.content.teaser
+                "
                 class="mt-8 min-h-4 space-y-4 rounded-3xl border border-red p-4"
-              ></p>
-            <!-- </Transition> -->
+              >
+                <StoryblokRichText :doc="selectedResearchArea.content.teaser" />
+              </div>
+            </Transition>
           </div>
-          <!-- <Transition name="fade" mode="out-in"> -->
-            <NuxtPage></NuxtPage>
-          <!-- </Transition> -->
+              <NuxtPage/>
         </div>
-        <div class="relative -z-10 order-first sm:order-last">
-          <!-- <Transition name="fade" mode="out-in"> -->
+        <div
+          v-if="
+            selectedResearchArea && selectedResearchArea.content.illustration
+          "
+          class="relative -z-10 order-first sm:order-last"
+        >
+          <Transition name="fade" mode="out-in">
             <img
               class="sticky top-32 max-h-[80vh]"
               :src="selectedResearchArea.content.illustration.filename"
               :key="selectedResearchArea.id"
             />
-          <!-- </Transition> -->
+          </Transition>
         </div>
       </div>
     </Container>
@@ -62,13 +69,11 @@ const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get("cdn/stories", {
   version: "draft",
   starts_with: "research",
-  is_startpage: false,
 });
 
 const researchAreas = data.stories;
 const route = useRoute();
 
-// const selectedResearchAreaId = ref(0);
 const selectedResearchArea = computed(() => {
   return (
     researchAreas.find(
@@ -76,12 +81,6 @@ const selectedResearchArea = computed(() => {
     ) || {}
   );
 });
-
-// onMounted(() => {
-//   if (researchAreas.length > 0) {
-//     selectedResearchAreaId.value = researchAreas[0].id;
-//   }
-// });
 </script>
 
 <style>

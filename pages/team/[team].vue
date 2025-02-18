@@ -16,26 +16,34 @@
     </div>
     <div id="team" class="sm:col-span-3 lg:col-span-4">
       <!-- Add member blok -->
-      <StoryblokComponent
-        v-if="teamType === 'principal-investigator'"
-        :blok="principalInvestigators.content"
-      />
-      <StoryblokComponent
-        v-else-if="teamType === 'phd-students'"
-        :blok="phdStudents.content"
-      />
-      <StoryblokComponent
-        v-else-if="teamType === 'post-docs'"
-        :blok="postDocs.content"
-      />
-      <StoryblokComponent
-        v-else-if="teamType === 'staff'"
-        :blok="staff.content"
-      />
-      <StoryblokComponent
-        v-else-if="teamType === 'alumni'"
-        :blok="alumni.content"
-      />
+
+      <div class="grid-row-1 grid gap-8">
+        <StoryblokComponent
+          v-if="teamType === 'principal-investigator'"
+          v-for="principalInvestigator in principalInvestigators.content.body"
+          :blok="principalInvestigator"
+        />
+        <StoryblokComponent
+          v-else-if="teamType === 'phd-students'"
+          v-for="phdStudent in phdStudents.content.body"
+          :blok="phdStudent"
+        />
+        <StoryblokComponent
+          v-else-if="teamType === 'post-docs'"
+          v-for="postDoc in postDocs.content.body"
+          :blok="postDoc"
+        />
+        <StoryblokComponent
+          v-else-if="teamType === 'staff'"
+          v-for="staffMember in staff.content.body"
+          :blok="staffMember"
+        />
+        <StoryblokComponent
+          v-else-if="teamType === 'alumni'"
+          v-for="alumniMember in alumni.content.body"
+          :blok="alumniMember"
+        />
+      </div>
       <!-- <Transition name="fade" mode="out-in">
         <div :key="teamType" class="grid-row-1 grid gap-8">
           <div

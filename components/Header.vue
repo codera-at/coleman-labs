@@ -87,7 +87,7 @@
 </template>
 
 <script setup>
-const navLinks = [
+let navLinks = [
   { name: "Home", link: "/" },
   {
     name: "Research",
@@ -96,7 +96,10 @@ const navLinks = [
       { name: "Mission & Vision", link: "/research/mission-vision" },
       { name: "Cardio", link: "/research/cardio" },
       { name: "Gut", link: "/research/gut" },
-      { name: "Brain Machine Interface", link: "/research/brain-machine-interface" },
+      {
+        name: "Brain Machine Interface",
+        link: "/research/brain-machine-interface",
+      },
       { name: "Brain Dynamics", link: "/research/brain-dynamics" },
       { name: "Applied Probability", link: "/research/applied-probability" },
     ],
@@ -116,6 +119,22 @@ const navLinks = [
   },
   { name: "Contact", link: "/contact" },
 ];
+
+const storyblokApi = useStoryblokApi();
+const { data } = await storyblokApi.get("cdn/stories", {
+  version: "draft",
+  starts_with: "research",
+});
+
+const mappedResearchAreas = data.stories.map((story) => {
+  return {
+    name: story.name,
+    link: "/" + story.full_slug,
+  };
+});
+
+navLinks.find((navLink) => navLink.name === "Research").submenu =
+  mappedResearchAreas;
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);

@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok">
     <Headline
-      v-if="blok.name && (resolvedDescription || blok.publications.length > 0)"
+      v-if="blok.name && (hasDescription || blok.publications.length > 0)"
       tag="h2"
       color="secondary"
       theme="pill"
@@ -10,10 +10,10 @@
       {{ blok.name }}
     </Headline>
     <div
-      v-if="resolvedDescription"
+      v-if="hasDescription"
       class="mt-8 space-y-4 rounded-3xl border border-red p-4"
     >
-      <p v-html="resolvedDescription"></p>
+      <StoryblokRichText :doc="blok.description" />
     </div>
     <br v-else />
     <Headline
@@ -48,7 +48,7 @@
 
 <script setup>
 const props = defineProps({ blok: Object });
-const resolvedDescription = computed(() =>
-  renderRichText(props.blok.description),
+const hasDescription = ref(
+  renderRichText(props.blok.description) ? true : false,
 );
 </script>

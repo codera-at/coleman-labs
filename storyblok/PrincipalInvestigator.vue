@@ -9,6 +9,7 @@
       "
       :alt="blok.name"
       :placeholder="[30, 30]"
+      provider="storyblok"
       width="300"
       height="300"
       class="mr-8 rounded-3xl border border-red object-cover"
@@ -26,7 +27,8 @@
           </a>
         </li>
       </ul>
-      <div v-if="blok.biography"
+      <div
+        v-if="blok.biography"
         v-html="renderRichText(blok.biography)"
         class="mt-4 space-y-2 rounded-3xl border border-red p-4"
       ></div>
