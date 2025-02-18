@@ -31,6 +31,13 @@ export default defineNuxtConfig({
       { name: "SourceSerif4", provider: "local" },
     ],
   },
+  app:{
+    head:{
+      htmlAttrs:{
+        lang: "en",
+      }
+    }
+  },
   site: {
     url: "https://colemanlab.stanford.edu/",
     name: "The Neural Interaction Lab",
