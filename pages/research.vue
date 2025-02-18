@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-16">
-    <Container class="min-h-screen py-16 sm:py-32">
+  <div class="pt-16 !min-h-screen">
+    <Container class="py-16 sm:py-32">
       <Headline
         id="research"
         tag="h2"

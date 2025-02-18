@@ -5,12 +5,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-  pageTransition: {
-    name: "fade",
-  },
-});
-
 const slug = useRoute().params.research;
 const researchStory = await useAsyncStoryblok(
   slug && slug.length > 0 ? "research/" + slug : "/research",
