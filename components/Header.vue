@@ -16,7 +16,7 @@
         <NuxtLink class="flex flex-row gap-4" to="/">
           <img
             src="/img/logo/Coleman_Labs_Logo_Signe_Light.svg"
-            alt="Stanford University Neural Interaction Lab"
+            alt="Neural Interaction Lab Signe - Brain with Nodes"
             class="hidden h-12 sm:block sm:h-16"
           />
           <div>

@@ -21,7 +21,7 @@
         <div class="flex justify-center">
           <img
             src="/img/logo/Coleman_Labs_Logo_Signe_Light_Numbers.svg"
-            alt="Stanford University"
+            alt="Neural Interaction Lab signe with numbers and heart"
             class="h-32 sm:h-full"
           />
         </div>

@@ -56,6 +56,7 @@
               class="sticky top-32 max-h-[80vh]"
               :src="selectedResearchArea.content.illustration.filename"
               :key="selectedResearchArea.id"
+              :alt="selectedResearchArea.content.illustration.alt"
             />
           </Transition>
         </div>
