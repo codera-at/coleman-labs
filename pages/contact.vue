@@ -3,7 +3,7 @@
     <Container id="contact" class="py-16 sm:py-32">
       <div class="flex">
         <Headline
-          tag="h2"
+          tag="h1"
           color="secondary"
           theme="pill"
           custom-class="sm:ml-16"

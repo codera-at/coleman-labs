@@ -3,7 +3,7 @@
     <Container class="min-h-screen py-16 sm:py-32">
       <Headline
         id="team"
-        tag="h2"
+        tag="h1"
         color="secondary"
         theme="pill"
         custom-class="scroll-mt-32 mb-16"

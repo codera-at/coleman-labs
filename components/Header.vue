@@ -74,6 +74,7 @@
           </ul>
         </nav>
         <button
+          aria-label="Menu"
           class="menu-icon space-y-2 rounded-full bg-red px-4 py-4 text-white sm:hidden"
           @click="isMenuOpen = !isMenuOpen"
           :class="{ open: isMenuOpen }"

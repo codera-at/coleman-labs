@@ -1,9 +1,9 @@
 <template>
-  <div class="pt-16 !min-h-screen">
+  <div class="!min-h-screen pt-16">
     <Container class="py-16 sm:py-32">
       <Headline
         id="research"
-        tag="h2"
+        tag="h1"
         color="secondary"
         theme="pill"
         custom-class="scroll-mt-32"
@@ -43,7 +43,7 @@
               </div>
             </Transition>
           </div>
-              <NuxtPage/>
+          <NuxtPage />
         </div>
         <div
           v-if="
