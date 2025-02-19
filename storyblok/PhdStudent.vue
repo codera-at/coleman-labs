@@ -37,7 +37,7 @@
           <span class="font-medium">Hobbies:</span>
           {{ blok.hobbies }}
         </li>
-        <li>
+        <li v-if="blok.email.email">
           <a :href="'mailto:' + blok.email.email" class="font-medium">
             {{ blok.email.email }}
           </a>

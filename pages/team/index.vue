@@ -31,7 +31,7 @@
     <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16">
       <NuxtImg
         v-for="teamImg in teamImgs"
-        class="rounded-3xl border border-red w-full object-cover h-full max-h-[500px]"
+        class="h-full max-h-[500px] w-full rounded-3xl border border-red object-cover"
         :src="teamImg.src"
         :alt="teamImg.alt"
         width="700"
@@ -94,17 +94,6 @@ const teamGroups = [
     link: "/team/alumni",
   },
 ];
-
-onMounted(() => {
-  // if (!route.params.team) {
-  //   navigateTo("/team/phd-students");
-  // } else {
-  //   console.log("team page");
-  //   document.getElementById("team").scrollIntoView({ behavior: "smooth" });
-  // }
-});
 </script>
 
-<style scoped>
-/* Add any additional styles here */
-</style>
+<style scoped></style>
