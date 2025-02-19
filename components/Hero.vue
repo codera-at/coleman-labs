@@ -9,7 +9,7 @@
     <Container
       class="flex min-h-screen flex-wrap content-center overflow-auto px-8"
     >
-      <div class="mt-16 flex flex-col gap-8 sm:flex-row">
+      <div class="mt-16 flex flex-col items-center gap-8 sm:flex-row">
         <div>
           <Headline family="serif" size="lg" weight="medium"
             >Stanford University</Headline
@@ -18,11 +18,13 @@
             >The Neural Interaction Lab</Headline
           >
         </div>
-        <div class="flex justify-center">
+        <div>
           <img
+            height="300"
+            width="300"
             src="/img/logo/Coleman_Labs_Logo_Signe_Light_Numbers.svg"
             alt="Neural Interaction Lab signe with numbers and heart"
-            class="h-32 sm:h-full"
+            class="xs:w-48 w-32 sm:w-64 md:w-80 lg:w-96"
           />
         </div>
       </div>
