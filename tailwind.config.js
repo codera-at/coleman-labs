@@ -2,6 +2,7 @@
 export default {
   content: [
     "./components/**/*.{vue,js}",
+    "./storyblok/**/*.{vue,js}",
     "./pages/**/*.vue",
     "./layouts/**/*.vue",
   ],

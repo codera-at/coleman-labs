@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16">
       <div class="space-y-8 sm:space-y-16">
         <p class="max-w-sm">
           Our team is composed of dedicated researchers and professionals who

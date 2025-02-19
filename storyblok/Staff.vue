@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="flex flex-col gap-2 sm:flex-row sm:items-center"
+    class="flex flex-col gap-4 sm:gap-8 sm:flex-row sm:items-center"
   >
     <NuxtImg
       :src="
@@ -12,7 +12,7 @@
       provider="storyblok"
       width="300"
       height="300"
-      class="mr-8 rounded-3xl border border-red object-cover"
+      class="rounded-3xl border border-red object-cover"
     ></NuxtImg>
     <div>
       <Headline tag="h2" size="md">{{ blok.name }}</Headline>
