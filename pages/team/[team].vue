@@ -14,7 +14,7 @@
         >
       </div>
     </div>
-    <div id="team" class="sm:col-span-3 lg:col-span-4">
+    <div class="sm:col-span-3 lg:col-span-4">
       <div class="grid-row-1 grid gap-8">
         <StoryblokComponent
           v-if="teamType === 'principal-investigator'"
