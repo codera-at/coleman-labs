@@ -33,6 +33,7 @@
         v-for="teamImg in teamImgs"
         class="rounded-3xl border border-red w-full object-cover h-full max-h-[500px]"
         :src="teamImg.src"
+        :alt="teamImg.alt"
         width="700"
         height="500"
         :placeholder="[70, 50]"
@@ -47,27 +48,27 @@ const route = useRoute();
 const teamImgs = [
   {
     src: "/img/coleman-labs-team-01.webp",
-    alt: "Coleman Labs Team 01",
+    alt: "Coleman Labs team group photo 01",
   },
   {
     src: "/img/coleman-labs-team-02.webp",
-    alt: "Coleman Labs Team 02",
+    alt: "Coleman Labs team group photo 02",
   },
   {
     src: "/img/coleman-labs-team-03.webp",
-    alt: "Coleman Labs Team 03",
+    alt: "Coleman Labs team group photo 03",
   },
   {
     src: "/img/coleman-labs-team-04.webp",
-    alt: "Coleman Labs Team 04",
+    alt: "Coleman Labs team group photo 04",
   },
   {
     src: "/img/coleman-labs-team-05.webp",
-    alt: "Coleman Labs Team 05",
+    alt: "Coleman Labs team group photo 05",
   },
   {
     src: "/img/coleman-labs-team-06.webp",
-    alt: "Coleman Labs Team 06",
+    alt: "Coleman Labs team group photo 06",
   },
 ];
 
