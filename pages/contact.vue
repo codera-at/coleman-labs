@@ -25,7 +25,7 @@
         <div class="space-y-4 sm:ml-16 sm:space-y-8">
           <Headline tag="h3" size="md">Dr. Coleman</Headline>
           <p class="max-w-sm">
-            <NuxtLink to="mail:toddcol@stanford.edu"
+            <NuxtLink to="mailto:toddcol@stanford.edu"
               >toddcol@stanford.edu</NuxtLink
             ><br />
             <NuxtLink to="https://colemanlab.sites.stanford.edu/"
